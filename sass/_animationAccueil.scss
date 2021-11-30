@@ -1,0 +1,80 @@
+#logoAnime {
+  height: 900px;
+  max-width: 1600px;
+  margin: auto;
+  margin-top: 0;
+  background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
+  display: flex;
+  justify-content: space-around;
+//   perspective:800px;
+//   transform-style: preserve-3d; 
+};
+
+
+.javaLogo{
+    position: absolute;
+    top: 20px;
+   margin-left: 50px;
+    // transform: scale(4);
+    align-self: center;
+    border: 1px solid pink;
+};
+
+.scriptLogo{
+    position: absolute;
+    top: 160px;
+    margin: auto;
+    border: 1px solid red;
+};
+
+
+
+@keyframes javaLogo {
+
+0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-1.75em);
+}
+20%{
+    opacity:1;
+}
+85%{
+    opacity: 1;
+    transform: scale(1);
+}
+100% {
+    opacity: 0;
+    transform: translateZ(-1500em);
+}
+
+}
+
+.javaLogo{
+    animation: javaLogo 10s ease-out;
+}
+
+
+
+@keyframes scriptLogo {
+
+    0% {
+        opacity: 0;
+        transform: scale(1.5) translateY(-1.75em);
+    }
+    20%{
+        opacity:1;
+    }
+    85%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateZ(1500em);
+    }
+    
+    }
+    
+    .scriptLogo{
+        animation: scriptLogo 10s ease-out;
+    }
