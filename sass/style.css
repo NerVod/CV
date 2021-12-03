@@ -5,11 +5,12 @@ body {
 }
 
 #logoAnime {
-  position: relative;
+  position: absolute;
   height: 900px;
   max-width: 1600px;
-  margin: auto;
-  margin-top: 0;
+  top: 0;
+  margin-left: 15%;
+  margin-right: 15%;
   background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
   background-position: fixed;
   display: flex;
@@ -91,6 +92,67 @@ body {
   100% {
     opacity: 0;
     transform: translateZ(-1500em);
+  }
+}
+#masqueTexteDefilant {
+  position: absolute;
+  margin: 0 auto;
+  height: 900px;
+  max-width: 1600px;
+  top: 0;
+  perspective: 380px;
+  perspective-origin: bottom;
+  overflow: visible;
+  transform: scaleY(0.9);
+}
+
+#titreTexteAnim {
+  position: absolute;
+  top: 0;
+  left: 13%;
+  right: 13%;
+  height: 100%;
+  animation: texteDefilant 20s ease;
+  animation-delay: 16000;
+}
+
+#texteDefilant {
+  perspective: 300px;
+  perspective-origin: bottom;
+  color: #b8a716;
+  margin: 0 15%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  padding: 0.5rem 0;
+}
+
+.raye {
+  text-decoration: line-through;
+}
+
+@keyframes texteDefilant {
+  0% {
+    transform: rotateX(21deg) translade3d(0, 100rem, 0);
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(21deg) translate3d(0, -150rem, 0);
+    opacity: 0;
   }
 }
 #menuSection {
