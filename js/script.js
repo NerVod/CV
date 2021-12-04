@@ -1,10 +1,4 @@
-// supprimer texte intro
-// cacherUnTruc(phraseIntro,6000);
-
-// cacherUnTruc(logoJavaScript, 16100);
-// const cacherUnTruc = function (trucACacher, temporisation){
-    
-// } 
+// delais animations intro partie gauche page accueil
 
 setTimeout(function() {
     
@@ -20,6 +14,7 @@ setTimeout(function() {
 
 },16100)
 
+// ajout logo occupation espace post animations
 setTimeout(function() {
     let imagePersistante = document.querySelector('#imagePersistante');
     imagePersistante.classList.remove('cache');
