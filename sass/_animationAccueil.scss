@@ -1,16 +1,18 @@
-#logoAnime {
+#zoneAnimation {
   position: absolute;
-  height: 900px;
-  max-width: 1600px;
+  height: 100%;
+  width: 100%;
   top: 0;
-  margin-left: 15%;
-  margin-right: 15%;
-  background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
-  background-position: fixed;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   perspective:800px;
+  perspective-origin: bottom;
   transform-style: preserve-3d; 
+  
+  font-size: 4vw;
+  line-height: 1.3;
+  overflow: hidden;
 };
 
 .cache {
@@ -19,13 +21,14 @@
 
 //  animation partie texte intro
 #phraseIntro {
+    
     color: rgb(36, 149, 143);
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
     position: absolute;
-    top: 42%;
-    margin: auto;
-    font-size: 2.5em;
+    top: 35%;
+    margin-left: 2rem;
+    font-size: 2.5rem;
     animation: fadeInandOut 6s ease-out; 
     
 }
@@ -69,18 +72,13 @@
 // animation partie Logo JavaScript
 
 .javaLogo{
+    // border: 1px solid red;
     position: absolute;
-    top: 20px;
+    top:20%;
     opacity: 0;
-    // transform: translateX(-5em);
-    transform:translateX(50px);
     align-self: center;
-    // border: 1px solid pink;
+    
     animation: javaLogo 10s ease-out;
-    -webkit-animation: javaLogo 10s ease-out;
-    -moz-animation: javaLogo 10s ease-out;
-    -o-animation: javaLogo 10s ease-out;
-    -ms-animation: javaLogo 10s ease-out;
     animation-delay: 6100ms;
 };
 
@@ -90,7 +88,7 @@
 
 0% {
     opacity: 0;
-    transform: scale(1.5) translateY(-1.75em);
+    transform: scale(1.5) translateY(-6.75em);
 }
 20%{
     opacity:1;
@@ -101,7 +99,7 @@
 }
 100% {
     opacity: 0;
-    transform: translateZ(-1500em);
+    transform: sscale(0.1) translateZ(-100em);
 }
 
 }
@@ -111,51 +109,60 @@
 
 
 // animation partie texte défilant
+#corpsAnim{
+    box-sizing: border-box;
+    color: rgb(184,167,22);
+    overflow: hidden;
+
+}
+
 
 #masqueTexteDefilant {
-    position: absolute;
-    margin: 0 auto; 
-    height: 900px;
-    max-width: 1600px;
-    top: 0;
+    margin: 0 auto;
     perspective: 380px;
     perspective-origin: bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    left: 8%;
     overflow: visible;
     transform: scaleY(0.9);
+    
+}
+#texteDefilant {
+    position: absolute;
+    top: 0;
+    right: 13%;
+    left: 13%;
+    height: 100%;
+
+    
+    
+    animation: texteDefilant 24s  ;
+    animation-delay: 15000ms;
 }
 
 #titreTexteAnim {
-    position: absolute;
-    top: 0;
-    left: 13%;
-    right: 13%;
-    height: 100%;
-    animation: texteDefilant 20s ease;
-    animation-delay: 16000;
+    margin-bottom: 5rem ;
+    
 }
 
-#texteDefilant {
-    perspective:300px;
-    perspective-origin: bottom;
-    color: rgb(184,167,22);
-    margin: 0 15%;
-
-}
 
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
+    font-size: 4rem;
     text-align: center;
 }
 
 p {
-    padding: 0.5rem 0;
+    padding: 0.9rem 0;
 }
 
 .raye{
@@ -173,7 +180,21 @@ p {
 
     }
     100%{
-        transform: rotateX(21deg) translate3d(0, -150rem, 0);
+        transform: rotateX(21deg) translate3d(0, -250rem, 0);
         opacity: 0;
     }
+}
+
+
+
+#imagePersistante {
+    position: absolute;
+    top:24%;
+    
+    align-self: center;
+}
+
+.visible{
+    opacity: 1;
+    
 }

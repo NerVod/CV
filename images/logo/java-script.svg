@@ -2,13 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="74mm"
+   height="105mm"
+   viewBox="0 0 74 105"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="java.svg"
+   sodipodi:docname="java-script.svg"
+   inkscape:export-filename="C:\Users\benat\Documents\codage\PROJETS\CV\images\logo\java-script.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -24,15 +27,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="6.2217172"
-     inkscape:cx="372.40523"
-     inkscape:cy="405.11324"
-     inkscape:window-width="3840"
-     inkscape:window-height="2066"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:zoom="1.2942899"
+     inkscape:cx="261.91969"
+     inkscape:cy="339.56845"
+     inkscape:window-width="2948"
+     inkscape:window-height="1447"
+     inkscape:window-x="1040"
+     inkscape:window-y="431"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showguides="false" />
   <defs
      id="defs2">
     <linearGradient
@@ -52,9 +56,9 @@
        xlink:href="#linearGradient49442"
        id="linearGradient49444"
        x1="63.92569"
-       y1="93.107367"
+       y1="93.107368"
        x2="133.77982"
-       y2="93.107367"
+       y2="93.107368"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
@@ -63,19 +67,23 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:25.4px;line-height:0;font-family:'Star Jedi Rounded';-inkscape-font-specification:'Star Jedi Rounded, Normal';stroke:#ffe81f;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="63.958763"
-       y="102.06186"
-       id="text28546"><tspan
-         sodipodi:role="line"
+       style="font-size:19.7761px;line-height:1.25;font-family:'Star Jedi Rounded';-inkscape-font-specification:'Star Jedi Rounded, Normal';stroke:#ffe81f;stroke-width:0.595615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="1.5027313"
+       y="37.707836"
+       id="text28546"
+       transform="scale(0.94927925,1.0534308)"
+       inkscape:export-filename="C:\Users\benat\Documents\codage\PROJETS\CV\images\logo\java-script.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          id="tspan28544"
-         style="line-height:0.95;stroke:#ffe81f;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="63.958763"
-         y="102.06186"> java</tspan><tspan
-         sodipodi:role="line"
-         style="line-height:0.95;letter-spacing:0.396875px;stroke:#ffe81f;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="63.958763"
-         y="126.19186"
-         id="tspan2295">script</tspan></text>
+         style="stroke:#ffe81f;stroke-width:0.595615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="1.5027313"
+         y="37.707836"
+         sodipodi:role="line"> java</tspan><tspan
+         style="letter-spacing:0.412001px;stroke:#ffe81f;stroke-width:0.595615;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="1.5027313"
+         y="62.427971"
+         id="tspan1221"
+         sodipodi:role="line">script</tspan></text>
   </g>
 </svg>

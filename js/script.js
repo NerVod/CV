@@ -19,3 +19,10 @@ setTimeout(function() {
     logoJavaScript.classList.add('cache')
 
 },16100)
+
+setTimeout(function() {
+    let imagePersistante = document.querySelector('#imagePersistante');
+    imagePersistante.classList.remove('cache');
+    imagePersistante.classList.add('visible');
+
+},38000 )

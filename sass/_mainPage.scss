@@ -1,5 +1,51 @@
 body {
     background-color: $background-mainPage;
-    margin-top: 0;
+    margin: 0;
     scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.pageAccueil{
+    border: 1px solid yellow;
+    height: 95vh;
+    margin: 1em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
+}
+
+.bandeau {
+    border : 1px solid yellow;
+    height : 12em;
+    margin:0;
+}
+.page{
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+
+}
+
+.leftAnimation{
+    border: 1px solid yellow;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.zoneAnimation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.droiteSelection {
+    border: 1px solid blue;
+    height: 100%;
+    width: 50%;
 }
