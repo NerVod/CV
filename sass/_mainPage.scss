@@ -16,7 +16,7 @@ body {
 }
 
 .bandeau {
-    border : 1px solid yellow;
+    border : 1px solid $jauneStarWars;
     height : 12em;
     margin:0;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .leftAnimation{
-    border: 1px solid yellow;
+    border: 1px solid $jauneStarWars;
     height: 100%;
     width: 50%;
     position: relative;

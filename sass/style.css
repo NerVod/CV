@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "starJedi-DGRW";
+  src: url("../fonts/fontsstar-jediStarJedi-DGRW.ttf") format("ttf");
+}
+@font-face {
+  font-family: "starJedi-Hollow";
+  src: url("../fonts/fontsstar-jediStarJediHollow-A4lL.ttf") format("ttf");
+}
+@font-face {
+  font-family: "starJedi-Rounded";
+  src: url("../fonts/fontsstar-jediStarJediRounded-jW3R.ttf") format("ttf");
+}
 body {
   background-color: #1b1a1a;
   margin: 0;
@@ -16,7 +28,7 @@ body {
 }
 
 .bandeau {
-  border: 1px solid yellow;
+  border: 1px solid #ffe81f;
   height: 12em;
   margin: 0;
 }
@@ -30,7 +42,7 @@ body {
 }
 
 .leftAnimation {
-  border: 1px solid yellow;
+  border: 1px solid #ffe81f;
   height: 100%;
   width: 50%;
   position: relative;
@@ -48,6 +60,14 @@ body {
   border: 1px solid blue;
   height: 100%;
   width: 50%;
+}
+
+.nomDeroulant {
+  color: #ffe81f;
+  font-family: starJedi-Rounded;
+  text-align: center;
+  font-size: 4em;
+  text-transform: uppercase;
 }
 
 #zoneAnimation {
