@@ -1,4 +1,60 @@
-#menuSection {
-    height: 800px;
-    width : 1600px;
+#selectHaut {
+    border: 1px solid green;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+#selectHaut a {
+    text-decoration: none;
+    color: $bleuStarWars;
+    font-size: 2em;
+}
+
+#selectCentre {
+    border: 1px solid orange;
+    height: 70%;
+    display: flex;
+}
+
+#selectGauche {
+    border: 1px solid blue;
+    width: 20%;
+}
+
+#photoChange {
+    border: 1px solid crimson;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+#photoChange img {
+    // height:90%;
+    width: 100%;
+}
+
+#selectDroite {
+    border: 1px solid goldenrod;
+    width: 20%;
+}
+
+
+
+
+
+#selectBas {
+    border: 1px solid violet;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+#selectBas a {
+    text-decoration: none;
+    color: $jauneStarWars;
+    font-size: 2em;
+}
+        

@@ -6,7 +6,6 @@
     align-items: center;
     font-family: 'Star Jedi Rounded', sans-serif;
     height: 4em;
-    
     color: $jauneStarWars;
     flex-wrap: nowrap;
     white-space: nowrap;
@@ -16,6 +15,7 @@
 .characSpecial {
     display: inline-block;
     margin-top: -1em;
+    color: $bleuStarWars;
 }
 
 

@@ -60,6 +60,8 @@ body {
   border: 1px solid blue;
   height: 100%;
   width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 
 .bandeau {
@@ -79,6 +81,7 @@ body {
 .characSpecial {
   display: inline-block;
   margin-top: -1em;
+  color: #24958f;
 }
 
 .nomDeroulant {
@@ -242,7 +245,7 @@ p {
     opacity: 1;
   }
   100% {
-    transform: rotateX(21deg) translate3d(0, -300rem, 0);
+    transform: rotateX(21deg) translate3d(0, -350rem, 0);
     opacity: 0;
   }
 }
@@ -257,9 +260,59 @@ p {
   opacity: 1;
 }
 
-#menuSection {
-  height: 800px;
-  width: 1600px;
+#selectHaut {
+  border: 1px solid green;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#selectHaut a {
+  text-decoration: none;
+  color: #24958f;
+  font-size: 2em;
+}
+
+#selectCentre {
+  border: 1px solid orange;
+  height: 70%;
+  display: flex;
+}
+
+#selectGauche {
+  border: 1px solid blue;
+  width: 20%;
+}
+
+#photoChange {
+  border: 1px solid crimson;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+#photoChange img {
+  width: 100%;
+}
+
+#selectDroite {
+  border: 1px solid goldenrod;
+  width: 20%;
+}
+
+#selectBas {
+  border: 1px solid violet;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#selectBas a {
+  text-decoration: none;
+  color: #ffe81f;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

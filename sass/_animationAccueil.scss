@@ -22,7 +22,7 @@
 //  animation partie texte intro
 #phraseIntro {
     
-    color: rgb(36, 149, 143);
+    color: $bleuStarWars;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
     position: absolute;
@@ -180,7 +180,7 @@ p {
 
     }
     100%{
-        transform: rotateX(21deg) translate3d(0, -300rem, 0);
+        transform: rotateX(21deg) translate3d(0, -350rem, 0);
         opacity: 0;
     }
 }
