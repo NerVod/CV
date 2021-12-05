@@ -1,14 +1,19 @@
+
 @font-face {
-    font-family: "starJedi-DGRW";
-    src: url("../fonts/fonts\star-jedi\StarJedi-DGRW.ttf") format("ttf"),          
+    font-family: 'Star Jedi Rounded', sans-serif;
+    src: url('../fonts/star-jedi/Star_Jedi_Rounded.ttf')  format('truetype');
 }
 
 @font-face {
-    font-family: "starJedi-Hollow";
-    src: url("../fonts/fonts\star-jedi\StarJediHollow-A4lL.ttf") format("ttf"),     
+    font-family: 'Star Jedi', sans-serif;
+    src: url('../fonts/star-jedi/Starjedi.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "starJedi-Rounded";
-    src: url("../fonts/fonts\star-jedi\StarJediRounded-jW3R.ttf") format("ttf"),     
+    font-family: 'Star Jedi Hollow', sans-serif;
+    src: url('../fonts/star-jedi/Starjhol.ttf') format("truetype");
 }
+
+// @import url('http://fonts.cdnfonts.com/css/star-jedi-rounded');
+
+

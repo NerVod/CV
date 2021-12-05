@@ -1,7 +1,41 @@
-.nomDeroulant {
+.bandeau {
+    display: flex;
+    font-size: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    align-items: center;
+    font-family: 'Star Jedi Rounded', sans-serif;
+    height: 4em;
+    
     color: $jauneStarWars;
-    font-family: starJedi-Rounded;
-    text-align: center;
-    font-size: 4em;
-    text-transform: uppercase;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.characSpecial {
+    display: inline-block;
+    margin-top: -1em;
+}
+
+
+
+.nomDeroulant {
+    font-size: 3em;
+   
+    white-space: nowrap;
+    animation:  defileGauche 180s infinite linear;
+
+    
+}
+
+
+
+@keyframes defileGauche {
+    0%{
+        transform : translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(-100%, 0, 0)
+    }
 }

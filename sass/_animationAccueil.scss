@@ -139,7 +139,7 @@
 
     
     
-    animation: texteDefilant 24s  ;
+    animation: texteDefilant 24s linear ;
     animation-delay: 15000ms;
 }
 
@@ -180,7 +180,7 @@ p {
 
     }
     100%{
-        transform: rotateX(21deg) translate3d(0, -250rem, 0);
+        transform: rotateX(21deg) translate3d(0, -300rem, 0);
         opacity: 0;
     }
 }

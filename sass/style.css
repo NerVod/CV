@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "starJedi-DGRW";
-  src: url("../fonts/fontsstar-jediStarJedi-DGRW.ttf") format("ttf");
+  font-family: "Star Jedi Rounded", sans-serif;
+  src: url("../fonts/star-jedi/Star_Jedi_Rounded.ttf") format("truetype");
 }
 @font-face {
-  font-family: "starJedi-Hollow";
-  src: url("../fonts/fontsstar-jediStarJediHollow-A4lL.ttf") format("ttf");
+  font-family: "Star Jedi", sans-serif;
+  src: url("../fonts/star-jedi/Starjedi.ttf") format("truetype");
 }
 @font-face {
-  font-family: "starJedi-Rounded";
-  src: url("../fonts/fontsstar-jediStarJediRounded-jW3R.ttf") format("ttf");
+  font-family: "Star Jedi Hollow", sans-serif;
+  src: url("../fonts/star-jedi/Starjhol.ttf") format("truetype");
 }
 body {
   background-color: #1b1a1a;
@@ -44,7 +44,7 @@ body {
 .leftAnimation {
   border: 1px solid #ffe81f;
   height: 100%;
-  width: 50%;
+  width: 40%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -59,17 +59,42 @@ body {
 .droiteSelection {
   border: 1px solid blue;
   height: 100%;
-  width: 50%;
+  width: 60%;
+}
+
+.bandeau {
+  display: flex;
+  font-size: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  align-items: center;
+  font-family: "Star Jedi Rounded", sans-serif;
+  height: 4em;
+  color: #ffe81f;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.characSpecial {
+  display: inline-block;
+  margin-top: -1em;
 }
 
 .nomDeroulant {
-  color: #ffe81f;
-  font-family: starJedi-Rounded;
-  text-align: center;
-  font-size: 4em;
-  text-transform: uppercase;
+  font-size: 3em;
+  white-space: nowrap;
+  animation: defileGauche 180s infinite linear;
 }
 
+@keyframes defileGauche {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
 #zoneAnimation {
   position: absolute;
   height: 100%;
@@ -181,7 +206,7 @@ body {
   right: 13%;
   left: 13%;
   height: 100%;
-  animation: texteDefilant 24s;
+  animation: texteDefilant 24s linear;
   animation-delay: 15000ms;
 }
 
@@ -217,7 +242,7 @@ p {
     opacity: 1;
   }
   100% {
-    transform: rotateX(21deg) translate3d(0, -250rem, 0);
+    transform: rotateX(21deg) translate3d(0, -300rem, 0);
     opacity: 0;
   }
 }
