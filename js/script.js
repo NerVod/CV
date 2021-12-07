@@ -52,6 +52,9 @@ window.document.attachEvent('onmousemove', positionSouris());
     
     
 //     position du sprite 
+var imageSprite = document.getElementById("imageSprite") 
+var margeHaut = imageSprite.style.marginTop;
+var margeGauche = imageSprite.style.marginLeft;
 
 var interpolationSpriteBen = {
 
@@ -63,4 +66,4 @@ var interpolationSpriteBen = {
 
 }
 
-var spriteBen = document
+var spriteBen = interpolationSpriteBen.bas
