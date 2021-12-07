@@ -12,7 +12,7 @@ setTimeout(function() {
 
     logoJavaScript.classList.add('cache')
 
-},16100)
+},16100);
 
 // ajout logo occupation espace post animations
 setTimeout(function() {
@@ -20,4 +20,47 @@ setTimeout(function() {
     imagePersistante.classList.remove('cache');
     imagePersistante.classList.add('visible');
 
-},38000 )
+},38000 );
+
+
+//  position du div
+let zoneAction = document.querySelector(".droiteSelection");
+let divPhoto = document.getElementById("photoChange");
+
+let positionDiv =function() {
+    let rect = divPhoto.getBoundingClientRect();
+    // let divX = rect
+    console.log(rect)
+} 
+zoneAction.addEventListener('mousemove', function(event) {positionDiv()})
+
+
+// photos mobile à la souris
+
+
+var positionSouris = function() {
+    if (addEventListener)
+    var positionSourisX = event.pageX;
+    var positionSourisY = event.pageY;
+    
+    console.log("positionSourisX " + positionSourisX);
+    console.log("positionSourisY " + positionSourisY);
+}    
+    
+window.addEventListener('mousemove', function(event) {positionSouris()})
+window.document.attachEvent('onmousemove', positionSouris());
+    
+    
+//     position du sprite 
+
+var interpolationSpriteBen = {
+
+  bas:  [{
+    margeHaut : 0 + 'px',
+    margeGauche : 0 + 'px' 
+  }],
+
+
+}
+
+var spriteBen = document

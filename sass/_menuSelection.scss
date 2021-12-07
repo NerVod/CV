@@ -16,6 +16,7 @@
     border: 1px solid orange;
     height: 50%;
     display: flex;
+    
 }
 
 #selectGauche {
@@ -31,16 +32,28 @@
     font-size: 2em;
 }
 
+
+
 #photoChange {
     border: 1px solid crimson;
     width: 40%;
     display: flex;
     justify-content: center;
+    position:relative;
+    overflow: hidden;
 }
+
+.spriteBen {
+    position: absolute;
+}
+
 #photoChange img {
     // height:90%;
     width: 100%;
 }
+
+
+
 
 #selectDroite {
     border: 1px solid goldenrod;

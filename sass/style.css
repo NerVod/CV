@@ -299,6 +299,12 @@ p {
   width: 40%;
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.spriteBen {
+  position: absolute;
 }
 
 #photoChange img {
