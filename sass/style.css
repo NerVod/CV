@@ -18,18 +18,13 @@ body {
 }
 
 .pageAccueil {
-  border: 1px solid yellow;
+  border: 1px solid #ffe81f;
   height: 95vh;
   margin: 1em;
   padding: 0;
   display: flex;
   flex-direction: column;
   background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
-}
-
-.bandeau {
-  height: 12em;
-  margin: 0;
 }
 
 .page {
@@ -75,6 +70,7 @@ body {
   flex-wrap: nowrap;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0;
 }
 
 .characSpecial {
@@ -373,6 +369,116 @@ p {
   text-decoration: none;
   color: #24958f;
   font-size: 2em;
+}
+
+#filAriane {
+  height: 5em;
+  border: 1px solid #ffe81f;
+  font-family: starJedi;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8em;
+  padding-top: -20px;
+  padding-bottom: -20px;
+}
+
+#filAriane a {
+  text-decoration: none;
+  color: #ffe81f;
+}
+
+#filAriane > div:nth-child(1) > a {
+  color: #24958f;
+}
+
+#commandesJeu {
+  height: 4em;
+  width: 100%;
+  border: 1px solid #ffe81f;
+  font-family: starJedi;
+  display: flex;
+  justify-content: space-around;
+}
+
+#mouvements {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 50%;
+  font-family: starJedi;
+  color: #ffe81f;
+}
+
+#jeu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 50%;
+  font-family: starJedi;
+  color: #ffe81f;
+}
+
+#start {
+  color: #24958f;
+}
+
+#start :hover {
+  cursor: pointer;
+}
+
+#competences {
+  border: 1px solid #ffe81f;
+  width: 16em;
+}
+
+#zoneJeu {
+  background-image: url(../images/STARWARS-SNOKE-STAR-DESTROYER.jpg);
+  background-position-x: center;
+  background-position-y: -20px;
+  background-origin: padding-box;
+  height: 100%;
+  width: 100%;
+}
+
+#competences {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#photo img {
+  transform: scale(0.8);
+  border-radius: 15px 15px;
+}
+
+#formation, #bulletPoints, #XP, #langue {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffe81f;
+}
+
+#formation ul, #bulletPoints ul, #XP ul, #langue ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+#formation p, #bulletPoints p, #XP p, #langue p {
+  font-family: starJedi;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: -8px;
+}
+
+.niveau {
+  margin-left: 20px;
+}
+
+.flou {
+  filter: blur(1.5rem);
 }
 
 /*# sourceMappingURL=style.css.map */

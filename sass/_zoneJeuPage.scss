@@ -1,0 +1,85 @@
+#filAriane {
+    height: 5em;
+    border: 1px solid $jauneStarWars;
+    font-family: $policeStarJedi;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8em;
+    padding-top: -20px;
+    padding-bottom: -20px;
+}
+
+#filAriane a {
+    text-decoration: none;
+    color: $jauneStarWars;   
+}
+#filAriane > div:nth-child(1) > a{
+    color: $bleuStarWars;
+}
+
+#commandesJeu {
+    height: 4em;
+    width: 100%;
+    border: 1px solid $jauneStarWars;
+    font-family: $policeStarJedi;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+#mouvements {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    font-family: $policeStarJedi;
+    color: $jauneStarWars;
+}
+
+#jeu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    font-family: $policeStarJedi;
+    color: $jauneStarWars;
+}
+
+#start{
+    color: $bleuStarWars;
+}
+#start :hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#competences {
+    border: 1px solid $jauneStarWars;
+    width: 16em;
+}
+
+#zoneJeu {
+    background-image: url(../images/STARWARS-SNOKE-STAR-DESTROYER.jpg);
+    background-position-x:center;
+    background-position-y: -20px;
+    background-origin: padding-box;
+    height: 100%;
+    width: 100%;
+}
