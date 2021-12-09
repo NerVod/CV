@@ -17,7 +17,7 @@ body {
 }
 
 .bandeau {
-    border : 1px solid $jauneStarWars;
+    // border : 1px solid $jauneStarWars;
     height : 12em;
     margin:0;
 }
@@ -31,7 +31,8 @@ body {
 }
 
 .leftAnimation{
-    border: 1px solid $jauneStarWars;
+    border-top: 1px solid $jauneStarWars;
+    border-right: 1px solid $jauneStarWars;
     height: 100%;
     width: 40%;
     position: relative;
@@ -46,7 +47,7 @@ body {
 }
 
 .droiteSelection {
-    // border: 1px solid blue;
+    border-top: 1px solid $jauneStarWars;
     height: 100%;
     width: 60%;
     display: flex;

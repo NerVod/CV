@@ -74,7 +74,7 @@
 .javaLogo{
     // border: 1px solid red;
     position: absolute;
-    top:20%;
+    top:30%;
     opacity: 0;
     align-self: center;
     font-family: $policeJedi, sans-serif ;
@@ -88,7 +88,7 @@
 
 0% {
     opacity: 0;
-    transform: scale(1.5) translateY(-6.75em);
+    transform: scale(1.5) translateY(-8.75em);
 }
 20%{
     opacity:1;
@@ -190,7 +190,7 @@ p {
 
 #imagePersistante {
     position: absolute;
-    top:24%;
+    top:32%;
     align-self: center;
     transform: scale(1.3);
 }
