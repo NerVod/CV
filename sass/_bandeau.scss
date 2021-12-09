@@ -4,7 +4,7 @@
     padding-top: 0.5em;
     padding-bottom: 1em;
     align-items: center;
-    font-family: 'Star Jedi Rounded', sans-serif;
+    font-family: $policeStarJedi, sans-serif;
     height: 4em;
     color: $jauneStarWars;
     flex-wrap: nowrap;
@@ -22,7 +22,7 @@
 
 .nomDeroulant {
     font-size: 3em;
-   
+    
     white-space: nowrap;
     animation:  defileGauche 180s infinite linear;
 

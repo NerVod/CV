@@ -1,6 +1,6 @@
 #selectHaut {
-    border: 1px solid green;
-    height: 25%;
+    // border: 1px solid green;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,18 +13,25 @@
 }
 
 #selectCentre {
-    border: 1px solid orange;
+    // border: 1px solid orange;
     height: 50%;
     display: flex;
+    justify-content: center;
+    flex-basis: auto;
     
 }
 
 #selectGauche {
-    border: 1px solid blue;
+    // border: 1px solid blue;
+    height: 321px;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 2;
+    position: relative;
+    align-self: center;
+    
 }
 #selectGauche a {
     text-decoration: none;
@@ -32,15 +39,49 @@
     font-size: 2em;
 }
 
+#zoneHautGauche, #zoneHautDroite, #zoneBasGauche, #zoneBasDroite {
+    height: 100%;
+    width: 33%;
+    // border : 1px solid orangered;
+    flex-grow: 2;
+}
+
+#zoneHautCentre , #zoneBasCentre {
+   height: 100%;
+   width: 341px;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: nowrap;
+    
+    
+}
+#zoneHautCentre a, #zoneBasCentre a{
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+    flex-wrap: nowrap;
+    overflow: visible;
+    
+}
+
 
 
 #photoChange {
-    border: 1px solid crimson;
-    width: 40%;
+    // border: 1px solid crimson;
+    // width: 40%;
     display: flex;
+    align-self: center;
     justify-content: center;
     position:relative;
     overflow: hidden;
+    // height:321px;
+    // width:241px;
+    min-height: 321px;
+    min-width: 241px;
+    border-radius: 20px 20px;
+    
+
 }
 
 #imageSprite {
@@ -49,6 +90,11 @@
     right: 0;
     bottom: 0;
     left: 0;
+    
+    background-image: url(../images/spriteBen.png);
+    background-size: scale(0.4);
+    margin-left: -1px;
+    margin-top: -325px;
     
     
 }
@@ -62,11 +108,16 @@
 
 
 #selectDroite {
-    border: 1px solid goldenrod;
+    // border: 1px solid goldenrod;
+    height: 321px;;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 2;
+    position: relative;
+    align-self: center;
+    
 }
 #selectDroite a {
     text-decoration: none;
@@ -79,8 +130,8 @@
 
 
 #selectBas {
-    border: 1px solid violet;
-    height: 25%;
+    // border: 1px solid violet;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

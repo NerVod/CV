@@ -21,9 +21,9 @@
 
 //  animation partie texte intro
 #phraseIntro {
-    
+    opacity: 0;
     color: $bleuStarWars;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $policeSansSerif;
     letter-spacing: 3px;
     position: absolute;
     top: 35%;
@@ -77,7 +77,7 @@
     top:20%;
     opacity: 0;
     align-self: center;
-    
+    font-family: $policeJedi, sans-serif ;
     animation: javaLogo 10s ease-out;
     animation-delay: 6100ms;
 };
@@ -136,6 +136,7 @@
     right: 13%;
     left: 13%;
     height: 100%;
+    font-family: $policeSansSerif;
 
     
     
@@ -195,6 +196,5 @@ p {
 }
 
 .visible{
-    opacity: 1;
-    
+    opacity: 1;   
 }

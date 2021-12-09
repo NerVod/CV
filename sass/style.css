@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Star Jedi Rounded", sans-serif;
-  src: url("../fonts/star-jedi/Star_Jedi_Rounded.ttf") format("truetype");
+  font-family: "deathStar";
+  src: url("DeathStar.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Star Jedi", sans-serif;
-  src: url("../fonts/star-jedi/Starjedi.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Star Jedi Hollow", sans-serif;
-  src: url("../fonts/star-jedi/Starjhol.ttf") format("truetype");
+  font-family: "starJedi";
+  src: url("Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background-color: #1b1a1a;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: deathStar, sans-serif;
 }
 
 .pageAccueil {
@@ -34,7 +34,6 @@ body {
 }
 
 .page {
-  border: 1px solid red;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -57,7 +56,6 @@ body {
 }
 
 .droiteSelection {
-  border: 1px solid blue;
   height: 100%;
   width: 60%;
   display: flex;
@@ -70,7 +68,7 @@ body {
   padding-top: 0.5em;
   padding-bottom: 1em;
   align-items: center;
-  font-family: "Star Jedi Rounded", sans-serif;
+  font-family: starJedi, sans-serif;
   height: 4em;
   color: #ffe81f;
   flex-wrap: nowrap;
@@ -119,6 +117,7 @@ body {
 }
 
 #phraseIntro {
+  opacity: 0;
   color: #24958f;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
@@ -163,6 +162,7 @@ body {
   top: 20%;
   opacity: 0;
   align-self: center;
+  font-family: deathStar, sans-serif;
   animation: javaLogo 10s ease-out;
   animation-delay: 6100ms;
 }
@@ -209,6 +209,7 @@ body {
   right: 13%;
   left: 13%;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
   animation: texteDefilant 24s linear;
   animation-delay: 15000ms;
 }
@@ -261,8 +262,7 @@ p {
 }
 
 #selectHaut {
-  border: 1px solid green;
-  height: 25%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,17 +275,21 @@ p {
 }
 
 #selectCentre {
-  border: 1px solid orange;
   height: 50%;
   display: flex;
+  justify-content: center;
+  flex-basis: auto;
 }
 
 #selectGauche {
-  border: 1px solid blue;
+  height: 321px;
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 2;
+  position: relative;
+  align-self: center;
 }
 
 #selectGauche a {
@@ -294,13 +298,38 @@ p {
   font-size: 2em;
 }
 
-#photoChange {
-  border: 1px solid crimson;
-  width: 40%;
+#zoneHautGauche, #zoneHautDroite, #zoneBasGauche, #zoneBasDroite {
+  height: 100%;
+  width: 33%;
+  flex-grow: 2;
+}
+
+#zoneHautCentre, #zoneBasCentre {
+  height: 100%;
+  width: 341px;
   display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+#zoneHautCentre a, #zoneBasCentre a {
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+#photoChange {
+  display: flex;
+  align-self: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  min-height: 321px;
+  min-width: 241px;
+  border-radius: 20px 20px;
 }
 
 #imageSprite {
@@ -309,14 +338,21 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
+  background-image: url(../images/spriteBen.png);
+  background-size: scale(0.4);
+  margin-left: -1px;
+  margin-top: -325px;
 }
 
 #selectDroite {
-  border: 1px solid goldenrod;
+  height: 321px;
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 2;
+  position: relative;
+  align-self: center;
 }
 
 #selectDroite a {
@@ -326,8 +362,7 @@ p {
 }
 
 #selectBas {
-  border: 1px solid violet;
-  height: 25%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
