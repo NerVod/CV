@@ -429,6 +429,19 @@ p {
   cursor: pointer;
 }
 
+#jeu > div:nth-child(1) {
+  margin-left: 10rem;
+  font-size: 1.4em;
+}
+
+#jeu > div:nth-child(2) {
+  margin-left: 2.5em;
+}
+
+#jeu > div:nth-child(3) {
+  margin-right: 6em;
+}
+
 #competences {
   border: 1px solid #ffe81f;
   width: 16em;
@@ -479,6 +492,10 @@ p {
 
 .flou {
   filter: blur(1.5rem);
+}
+
+.bleu {
+  color: #24958f;
 }
 
 /*# sourceMappingURL=style.css.map */
