@@ -1,0 +1,27 @@
+#decor {
+    width: 100%;
+    height: 60%;
+    border: 1px solid red;
+}
+
+
+#gameArea {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    border: 1px solid blue;
+}
+
+#masqueLuke {
+    height: 68px;
+    width: 35px;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid yellowgreen;
+}
+
+#Luke { 
+    position: absolute; 
+    margin-top: -1px;
+    margin-left: -1px;
+}
