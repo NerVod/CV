@@ -2,6 +2,7 @@
     // border: 1px solid green;
     height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     
@@ -26,6 +27,7 @@
     height: 321px;
     width: 30%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 2;
@@ -50,6 +52,7 @@
    height: 100%;
    width: 341px;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-content: center;
    flex-wrap: nowrap;
@@ -63,6 +66,28 @@
     flex-wrap: nowrap;
     overflow: visible;
     
+}
+
+.dashBords {
+    height: 2px;
+    width: 60%;
+}
+.dash {
+    height: 2px;
+    width: 100%;
+}
+
+.selecteurHover:hover{
+    transform: scale(1.2);
+}
+
+.selecteurHover:hover .dash{
+    background-color: $bleuStarWars;
+    box-shadow: 0px 20px 30px 17px rgba(36,149,143,0.71);
+}
+.selecteurHover:hover .dashBords{
+    background-color: $bleuStarWars;
+    box-shadow: 0px 20px 30px 17px rgba(36,149,143,0.71);
 }
 
 
@@ -112,6 +137,7 @@
     height: 321px;;
     width: 30%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 2;
