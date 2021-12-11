@@ -13,11 +13,12 @@
 }
 
 #masqueLuke {
-    height: 68px;
-    width: 35px;
-    position: absolute;
-    overflow: hidden;
     border: 1px solid yellowgreen;
+    height: 68px;
+    overflow: hidden;
+    position: absolute;
+    width: 35px;
+    top: 40%;
 }
 
 #Luke { 

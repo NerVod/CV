@@ -14,9 +14,31 @@
     text-decoration: none;
     color: $jauneStarWars;   
 }
+#filAriane div:hover  {
+    transform: scale(1.2); 
+    border-radius: 8px 8px ;
+    
+}
 #filAriane > div:nth-child(1) > a{
     color: $bleuStarWars;
 }
+
+.itemMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dash {
+    height: 2px; 
+    width: 100%;
+    
+}
+
+.itemMenu:hover .dash{
+    background-color: $bleuStarWars;
+    box-shadow: 0px 50px 50px 17px rgba(36,149,143,0.71);
+}
+
 
 #commandesJeu {
     height: 4em;
@@ -34,7 +56,7 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    width: 50%;
+    width: 70%;
     font-family: $policeStarJedi;
     color: $jauneStarWars;
 }
@@ -44,7 +66,7 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    width: 50%;
+    width: 30%;
     font-family: $policeStarJedi;
     color: $jauneStarWars;
 }
@@ -58,7 +80,7 @@
 }
 
 #jeu > div:nth-child(1) {
-    margin-left: 10rem;
+    margin-left: 2rem;
     font-size: 1.4em;
 }
 
@@ -84,4 +106,13 @@
     background-origin: padding-box;
     height: 100%;
     width: 100%;
+}
+
+.fleche {
+    font-size: 1.6em;
+    font-weight: 800;
+}
+
+#mouvements > div:nth-child(3) > p {
+    padding-top: 5px;
 }
