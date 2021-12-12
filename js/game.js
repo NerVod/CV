@@ -1155,13 +1155,13 @@ var deplacementSprite = {
       gauche: false,
       
     },
-    mouvement: {
-      deplacer: false,
-      attaquer: false,
-      statique: false,
+    // mouvement: {
+    //   deplacer: false,
+    //   attaquer: false,
+    //   statique: false,
       
       
-    },
+    // },
     incrementationDePosition: function(position, increment){
       
       var valeurDeLaPosition = parseFloat(masqueLuke.style[position]);
@@ -1216,9 +1216,9 @@ var deplacementSprite = {
     window.addEventListener('keydown', function(evenementSurvenu){
               
         if ('KeyD' === evenementSurvenu.code) {
-                ici.directions.droite = true;
-                redresseImage()
-                mouvement(avanceVersDroite, 9);
+          ici.directions.droite = true;
+          redresseImage()
+          mouvement(avanceVersDroite, 9);
         }
         if ('KeyA' === evenementSurvenu.code ) {
           ici.directions.gauche = true;
@@ -1244,38 +1244,8 @@ var deplacementSprite = {
         }
         if ('Space' === evenementSurvenu.code) {
           sauter();
-        }
-
-        
+        } 
       });
-
-    // window.addEventListener('keydown', function(evenementSurvenu){
-        
-    //     var largeurMasque = masqueLuke.offsetWidth;
-    //     var hauteurMasque = masqueLuke.offsetHeight;
-        
-    //     var largeurTerrain = gameArea.offsetWidth;
-    //     var hauteurTerrain = gameArea.offsetHeight;
-        
-    //     var margeGaucheDeLuke = masqueLuke.offsetLeft;
-    //     var margeHautDeLuke = masqueLuke.offsetHeight - hauteurMasque;
-        
-    //     if ( largeurTerrain > (largeurMasque + margeGaucheDeLuke)) {
-    //             ici.directions.droite = false;
-    //     }
-    //     if ( margeGaucheDeLuke <= 0) {
-    //       ici.directions.gauche = false;
-    //     }
-    //     if (margeHautDeLuke >= 0) {
-    //       ici.directions.haut = false;
-    //     }
-    //     if (hauteurTerrain > (hauteurMasque + margeHautDeLuke )) {
-    //       ici.directions.bas = false;
-    //     }
-    //   });
-
-
-
 
 
 
@@ -1309,14 +1279,15 @@ var deplacementSprite = {
 
   deplacementSprite.start();
 
-  console.dir(deplacementSprite);
+  console.log(deplacementSprite);
 
 
    /**
   * DEPLACEMENT DE l'IMAGE DANS LE SPRITE
   */ 
 var imageSprite = document.getElementById('Luke');
-var leSprite = document.getElementById('masqueLuke')
+var leSprite = document.getElementById('masqueLuke');
+var darkAngular = document.getElementById('masqueAngular');
 var avanceVersDroite = interpolationSpriteObi.avancer;
 var attaquer = interpolationSpriteObi.attaque1;
 var statique = interpolationSpriteObi.base;
@@ -1363,12 +1334,9 @@ var mouvement = function(direction, duree) {
              margeHaut =0;
            }
            margeHaut = margeHaut + parseFloat(direction[i].margeEnHaut) + 'px';
-
-
-
-            
+  
             i++;
-            console.log(direction[i])
+            // console.log(direction[i])
             
             if ( i == direction.length) {
               clearInterval(bouge)
@@ -1391,14 +1359,19 @@ var redresseImage = function() {
 var starter = window.document.getElementById('start')
 start.addEventListener('click', function() {
   apparitionJoueur();
+  apparitionEnnemi();
 })
 
 
 var apparitionJoueur = function() {
   leSprite.style.visibility = 'visible';
   leSprite.style.top= '40%';
-  leSprite.style.left= 0;
+  leSprite.style.left= '50px';
   mouvement(statique, 100);
+}
+
+var apparitionEnnemi = function () {
+  darkAngular.style.visibility = 'visible';
 }
 
 
@@ -1426,6 +1399,8 @@ var apparitionJoueur = function() {
 //   var largeurAngular = coordonneesAngular.width;
 //   var hauteurAngular = coordonneesAngular.height;
 
+
+
 // fonction test collisions
 
 setInterval(function(){
@@ -1433,8 +1408,6 @@ setInterval(function(){
 testCollision();
 
 },100)
-
-
 
 
 
@@ -1468,6 +1441,7 @@ var testCollision = function() {
     } else {
       collision = true
       // console.log('collision détectée '+ collision);
+      deplacementSprite.directions.droite = false;
       deplacementSprite.incrementationDePosition('left', -4);
       monterScore();
       return collision
@@ -1475,29 +1449,56 @@ var testCollision = function() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+////////////////////////////////////////////////////////////////////////////////
 
 
 // Fonction monter le score
+var score = document.getElementById('leScore')
 
 var monterScore = function() {
-  var score = document.getElementById('leScore')
   var leScore = parseFloat(score.innerText)
   var nouveauScore = leScore + 10;
   score.innerText = nouveauScore;
+}
+
+
+// actions au score du joueur 
+
+var controleScore = function() {
+
+  setInterval(function() {
+    var scoreReference = parseFloat(score.innerText);
+    if(scoreReference>100){
+      changerPhoto();
+    }
+    if(scoreReference>200){
+      supprimerFlou(formation);
+    }
+    if(scoreReference>300){
+      supprimerFlou(bulletPoints);
+    }
+    if(scoreReference>400){
+      supprimerFlou(experience);
+    }
+    if(scoreReference>500){
+      supprimerFlou(langue);
+    }
+
+  },20)
+
+}
+controleScore();
+
+var photoCible = document.getElementById('photocible');
+var changerPhoto = function() {
+  photoCible.src='../images/sansmasque.jpg'
+}
+
+var formation = document.getElementById('formation');
+var bulletPoints = document.getElementById('bulletPoints');
+var experience = document.getElementById('XP')
+var langue = document.getElementById('langue')
+
+var supprimerFlou = function(paragrapheFlou) {
+  paragrapheFlou.classList.remove('flou')
 }

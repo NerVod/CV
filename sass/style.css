@@ -565,7 +565,6 @@ p {
 }
 
 #masqueLuke {
-  border: 1px solid yellowgreen;
   height: 68px;
   overflow: hidden;
   position: absolute;
@@ -585,13 +584,13 @@ p {
   width: 120px;
   position: absolute;
   top: 45%;
-  right: 20px;
+  right: 50px;
+  visibility: hidden;
 }
 
 #darkAngular {
   height: 35px;
   width: 120px;
-  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
