@@ -19,10 +19,29 @@
     position: absolute;
     width: 35px;
     top: 40%;
+    visibility: hidden;
 }
 
 #Luke { 
     position: absolute; 
     margin-top: -1px;
     margin-left: -1px;
+}
+
+#masqueAngular {
+    height: 35px;
+    width: 120px;
+    position: absolute;
+    top: 45%;
+    right: 20px;
+}
+
+
+#darkAngular {
+    height: 35px;
+    width: 120px;
+    // position: absolute;
+    // top: 45%;
+    // right: 20px;
+    border: 1px solid red;
 }

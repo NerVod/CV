@@ -1,3 +1,5 @@
+'use strict'
+
 var interpolationSpriteObi = {
     base :[
     {image:{
@@ -1136,87 +1138,6 @@ attaqueHaut : [
 
 }
 
-/////////////////////////////////////////////////////////////////////////
-///////////////premier jet d'un déplacement du DIV Conteneur du sprite
-///////////////////////////////////////////////////////////////////////
-
-// const containerPersonnage = window.document.getElementById('masqueLuke');
-// const personnage = window.document.getElementById('Luke')
-// const gameArea = window.document.getElementById('gameArea')
-
-// const aDroite = function() {
-
-// if (containerPersonnage.style.marginLeft == ''){
-//     containerPersonnage.style.marginLeft = 0;
-// }
-// containerPersonnage.style.left =  (parseFloat(containerPersonnage.style.left)+1) + 'px';
-
-// };
-// const aGauche = function() {
-//     if (containerPersonnage.style.left == '' || containerPersonnage.style.left == '0px'){
-//         containerPersonnage.style.left = '0px';
-//     } else {
-//         containerPersonnage.style.left =  (parseFloat(containerPersonnage.style.left)-1) + 'px';
-//     } 
-// };
-
-
-// const enHaut = function() {
-//     if (containerPersonnage.style.top == ''){
-//         containerPersonnage.style.top = '0px';
-//         console.log('dans le if');
-//     } else {
-//         containerPersonnage.style.top =  (parseFloat(containerPersonnage.style.top)-1) + 'px';
-//         console.log('dans le else')
-//     } 
-// };
-// const enBas = function() {
-//     if (containerPersonnage.style.top == '') {
-//         containerPersonnage.style.top = '0px';
-//     } else {
-//         containerPersonnage.style.top =  (parseFloat(containerPersonnage.style.top)+1) + 'px';
-//     } 
-// };
-
-
-// window.onkeydown = function(event){
-
-//     var code = event.keyCode;
-
-//     switch(code){
-//       case 37:
-//         //instructions
-//         //alert('gauche');
-//         aGauche();
-//       break;
-//       case 38:
-//         //instructions
-//         // alert('haut');
-//         enHaut()
-//       break;
-//       case 39:
-//         //instructions
-//         //alert('droite');
-//         aDroite();
-//       break;
-//       case 40:
-//         //instructions
-//         // alert('bas');
-//         enBas()
-//       break;
-//       case 13:
-//         //instructions
-//         //alert('entrée');
-//         stopAction();
-//         actionChrono = window.setInterval(enAction,75);;
-//       break;
-//     };
-//   };
-
-//   window.onkeyup = function(){
-//     // auRepos();
-//   };
-
 
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
@@ -1231,12 +1152,14 @@ var deplacementSprite = {
       haut: false,
       droite: false,
       bas: false,
-      gauche: false
+      gauche: false,
+      
     },
     mouvement: {
       deplacer: false,
       attaquer: false,
       statique: false,
+      
       
     },
     incrementationDePosition: function(position, increment){
@@ -1318,6 +1241,9 @@ var deplacementSprite = {
         }
         if ('ArrowUp' === evenementSurvenu.code) {
           mouvement(attaqueHaut, 30);
+        }
+        if ('Space' === evenementSurvenu.code) {
+          sauter();
         }
 
         
@@ -1452,14 +1378,6 @@ var mouvement = function(direction, duree) {
      },duree);        
 };
 
-// personnage immobile 
-window.document.body.onload = mouvement(statique, 100);
-
-
-
-
-
-
 //  inversion sens image 
 
 var inverseImage = function() {
@@ -1469,3 +1387,117 @@ var redresseImage = function() {
   leSprite.style.transform = 'scaleX(1)';
 }
 
+// personnage animation apparition 
+var starter = window.document.getElementById('start')
+start.addEventListener('click', function() {
+  apparitionJoueur();
+})
+
+
+var apparitionJoueur = function() {
+  leSprite.style.visibility = 'visible';
+  leSprite.style.top= '40%';
+  leSprite.style.left= 0;
+  mouvement(statique, 100);
+}
+
+
+
+//////////////////////////////////////////////////////////////
+////////////////////////////DARK ANGULAR//////////////////////
+//////////////////////////////////////////////////////////////
+
+// var coordonneesZoneJeu = gameArea.getBoundingClientRect()
+//   var hautZonejeu = coordonneesZoneJeu.y;
+//   var gaucheZoneJeu = coordonneesZoneJeu.x;
+//   var largeurZoneJeu = coordonneesZoneJeu.width;
+//   var hauteurZoneJeu = coordonneesZoneJeu.height;
+  
+//   var coordonneesJoueur = masqueLuke.getBoundingClientRect();
+//   var hautJoueur = coordonneesJoueur.y;
+//   var gaucheJoueur = coordonneesJoueur.x;
+//   var largeurJoueur = coordonneesJoueur.width;
+//   var hauteurJoueur = coordonneesJoueur.height;
+
+//   var angular = document.getElementById('masqueAngular');
+//   var coordonneesAngular = angular.getBoundingClientRect();
+//   var hautAngular = coordonneesAngular.y;
+//   var gaucheAngular = coordonneesAngular.x;
+//   var largeurAngular = coordonneesAngular.width;
+//   var hauteurAngular = coordonneesAngular.height;
+
+// fonction test collisions
+
+setInterval(function(){
+ 
+testCollision();
+
+},100)
+
+
+
+
+
+var collision ;
+var testCollision = function() {
+ 
+  var coordonneesJoueur = masqueLuke.getBoundingClientRect();
+  var hautJoueur = coordonneesJoueur.y;
+  var gaucheJoueur = coordonneesJoueur.x;
+  var largeurJoueur = coordonneesJoueur.width;
+  var hauteurJoueur = coordonneesJoueur.height;
+
+  var angular = document.getElementById('masqueAngular');
+  var coordonneesAngular = angular.getBoundingClientRect();
+  var hautAngular = coordonneesAngular.y;
+  var gaucheAngular = coordonneesAngular.x;
+  var largeurAngular = coordonneesAngular.width;
+  var hauteurAngular = coordonneesAngular.height;
+
+  // console.log(coordonneesJoueur);
+  // console.log(coordonneesAngular);
+
+      // test des conditions de collisions
+  if ((gaucheJoueur + largeurJoueur) < gaucheAngular ||
+    gaucheJoueur > (gaucheAngular + largeurAngular) ||
+    (hautJoueur + hauteurJoueur) < hautAngular ||
+    (hautJoueur > hautAngular + hauteurAngular)) {
+      collision = false;
+      // console.log('collision détectée ' + collision)
+      return collision
+    } else {
+      collision = true
+      // console.log('collision détectée '+ collision);
+      deplacementSprite.incrementationDePosition('left', -4);
+      monterScore();
+      return collision
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Fonction monter le score
+
+var monterScore = function() {
+  var score = document.getElementById('leScore')
+  var leScore = parseFloat(score.innerText)
+  var nouveauScore = leScore + 10;
+  score.innerText = nouveauScore;
+}
