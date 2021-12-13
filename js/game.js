@@ -1265,7 +1265,7 @@ var deplacementSprite = {
 
     masqueLuke.style[position] = valeurDeLaPosition + "px";
   },
-  leMoteurPourLesAnimations: function (tempsEcoule) {
+  leMoteurPourLesAnimations: function () {
     if (this.directions.droite) {
       this.incrementationDePosition("left", 4);
     }
@@ -1319,9 +1319,7 @@ var deplacementSprite = {
       }
     });
 
-    /////////////////code changé au dessus //////////////////////////////
-    //////////////////////////////////////////////////////////////////////
-
+    /////////////////////////////////////////////////////////////////
     window.addEventListener("keyup", function (evenementSurvenu) {
       if ("KeyD" === evenementSurvenu.code) {
         ici.directions.droite = false;
@@ -1451,6 +1449,8 @@ var apparitionEnnemi = function () {
 //////////////////////////////////////////////////////////
 // fonction test collisions personnages
 //////////////////////////////////////////////////////////
+var angular = document.getElementById("masqueAngular");
+
 setInterval(function () {
   testCollision();
 }, 30);
@@ -1463,7 +1463,6 @@ var testCollision = function () {
   var largeurJoueur = coordonneesJoueur.width;
   var hauteurJoueur = coordonneesJoueur.height;
 
-  var angular = document.getElementById("masqueAngular");
   var coordonneesAngular = angular.getBoundingClientRect();
   var hautAngular = coordonneesAngular.y;
   var gaucheAngular = coordonneesAngular.x;
@@ -1581,4 +1580,29 @@ var langue = document.getElementById("langue");
 
 var supprimerFlou = function (paragrapheFlou) {
   paragrapheFlou.classList.remove("flou");
+};
+
+///////////////////////////////////////////////////////
+
+var mouvementHautAngular = function () {
+  var positionAndular = angular.getBoundingClientRect();
+  var coordonneesZoneJeu = zoneJeu.getBoundingClientRect();
+
+  var deplacementAngular = {
+    directions: {
+      haut: false,
+      bas: false,
+    },
+
+    incrementationDePosition: function (position, increment) {
+      var valeurDeLaPosition = parseFloat(angular.style[position]);
+      if (isNaN(valeurDeLaPosition)) {
+        valeurDeLaPosition = 0;
+      }
+
+      valeurDeLaPosition = valeurDeLaPosition + increment;
+
+      angular.style[position] = valeurDeLaPosition + "px";
+    },
+  };
 };
