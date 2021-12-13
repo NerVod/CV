@@ -22,8 +22,50 @@ setTimeout(function() {
     
 
 },38100 );
+<<<<<<< HEAD
 
 
+=======
+
+
+//  position du div
+// let zoneAction = document.querySelector(".droiteSelection");
+// let divPhoto = document.getElementById("photoChange");
+
+// let positionDiv =function() {
+//     let rect = divPhoto.getBoundingClientRect();
+//     // let divX = rect
+//     console.log(rect)
+// } 
+// zoneAction.addEventListener('mousemove', function(event) {positionDiv()})
+
+
+// photos mobile à la souris
+
+
+// var positionSourisX = event.pageX;
+// var positionSourisY = event.pageY;
+
+// var positionSouris = function() {
+//     if (addEventListener)
+//     positionSourisX = event.pageX;
+//     positionSourisY = event.pageY;
+    
+//     console.log("positionSourisX " + positionSourisX);
+//     console.log("positionSourisY " + positionSourisY);
+//     return {
+//         positionSourisX,
+//         positionSourisY
+//     }
+// }    
+    
+// let sx = positionSourisX;
+// let sy = positionSourisY
+
+// window.addEventListener('mousemove', function(event) {positionSouris()})
+// window.document.attachEvent('onmousemove', positionSouris());
+    
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     
 //     position du sprite 
 const imageSprite = document.getElementById("imageSprite") 

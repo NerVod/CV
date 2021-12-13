@@ -107,6 +107,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3880,
 //       left:-484,
@@ -116,6 +117,17 @@ var interpolationSpriteObi = {
 //         width: 37,
 //     }
 // },
+=======
+    {image:{
+      top:-3880,
+      left:-484,
+    },
+    masque:{
+        height: 67,
+        width: 37,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3880,
       left:-521,
@@ -125,6 +137,7 @@ var interpolationSpriteObi = {
         width: 37,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3880,
 //       left:-559,
@@ -134,6 +147,17 @@ var interpolationSpriteObi = {
 //         width: 37,
 //     }
 // },
+=======
+    {image:{
+      top:-3880,
+      left:-559,
+    },
+    masque:{
+        height: 67,
+        width: 37,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3880,
       left:-597,
@@ -143,6 +167,7 @@ var interpolationSpriteObi = {
         width: 37,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3880,
 //       left:-634,
@@ -152,6 +177,17 @@ var interpolationSpriteObi = {
 //         width: 37,
 //     }
 // },
+=======
+    {image:{
+      top:-3880,
+      left:-634,
+    },
+    masque:{
+        height: 67,
+        width: 37,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3880,
       left:-672,
@@ -161,6 +197,7 @@ var interpolationSpriteObi = {
         width: 37,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3945,
 //       left:-366,
@@ -170,6 +207,17 @@ var interpolationSpriteObi = {
 //         width: 37,
 //     }
 // },
+=======
+    {image:{
+      top:-3945,
+      left:-366,
+    },
+    masque:{
+        height: 67,
+        width: 37,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3945,
       left:-404,
@@ -179,6 +227,7 @@ var interpolationSpriteObi = {
         width: 37,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3945,
 //       left:-482,
@@ -188,6 +237,17 @@ var interpolationSpriteObi = {
 //         width: 39,
 //     }
 // },
+=======
+    {image:{
+      top:-3945,
+      left:-482,
+    },
+    masque:{
+        height: 67,
+        width: 39,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3945,
       left:-523,
@@ -197,6 +257,7 @@ var interpolationSpriteObi = {
         width: 40,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3945,
 //       left:-565,
@@ -206,6 +267,17 @@ var interpolationSpriteObi = {
 //         width: 40,
 //     }
 // },
+=======
+    {image:{
+      top:-3945,
+      left:-565,
+    },
+    masque:{
+        height: 67,
+        width: 40,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3945,
       left:-606,
@@ -215,6 +287,7 @@ var interpolationSpriteObi = {
         width: 39,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3945,
 //       left:-647,
@@ -224,6 +297,17 @@ var interpolationSpriteObi = {
 //         width: 39,
 //     }
 // },
+=======
+    {image:{
+      top:-3945,
+      left:-647,
+    },
+    masque:{
+        height: 67,
+        width: 39,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3945,
       left:-687,
@@ -233,6 +317,7 @@ var interpolationSpriteObi = {
         width: 39,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4011,
 //       left:-365,
@@ -242,6 +327,17 @@ var interpolationSpriteObi = {
 //         width: 39,
 //     }
 // },
+=======
+    {image:{
+      top:-4011,
+      left:-365,
+    },
+    masque:{
+        height: 65,
+        width: 39,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4011,
       left:-403,
@@ -251,6 +347,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4011,
 //       left:-441,
@@ -260,6 +357,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-4011,
+      left:-441,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4011,
       left:-479,
@@ -269,6 +377,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4011,
 //       left:-517,
@@ -278,6 +387,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-4011,
+      left:-517,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4011,
       left:-556,
@@ -287,6 +407,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4011,
 //       left:-593,
@@ -296,6 +417,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-4011,
+      left:-593,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4011,
       left:-629,
@@ -305,6 +437,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4011,
 //       left:-677,
@@ -314,6 +447,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-4011,
+      left:-677,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4075,
       left:-368,
@@ -323,6 +467,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4075,
 //       left:-408,
@@ -332,6 +477,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-4075,
+      left:-408,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4075,
       left:-448,
@@ -341,6 +497,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4075,
 //       left:-487,
@@ -350,6 +507,17 @@ var interpolationSpriteObi = {
 //         width: 41,
 //     }
 // },
+=======
+    {image:{
+      top:-4075,
+      left:-487,
+    },
+    masque:{
+        height: 65,
+        width: 41,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4075,
       left:-531,
@@ -359,6 +527,7 @@ var interpolationSpriteObi = {
         width: 41,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4075,
 //       left:-574,
@@ -368,6 +537,17 @@ var interpolationSpriteObi = {
 //         width: 41,
 //     }
 // },
+=======
+    {image:{
+      top:-4075,
+      left:-574,
+    },
+    masque:{
+        height: 65,
+        width: 41,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-4075,
       left:-617,
@@ -377,6 +557,7 @@ var interpolationSpriteObi = {
         width: 41,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-4075,
 //       left:-659,
@@ -386,6 +567,17 @@ var interpolationSpriteObi = {
 //         width: 41,
 //     }
 // },
+=======
+    {image:{
+      top:-4075,
+      left:-659,
+    },
+    masque:{
+        height: 65,
+        width: 41,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3882,
       left:-367,
@@ -395,6 +587,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3882,
 //       left:-406,
@@ -404,6 +597,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-3882,
+      left:-406,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3882,
       left:-444,
@@ -413,6 +617,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3882,
 //       left:-483,
@@ -422,6 +627,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-3882,
+      left:-483,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3882,
       left:-521,
@@ -431,6 +647,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3882,
 //       left:-559,
@@ -440,6 +657,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-3882,
+      left:-559,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3882,
       left:-597,
@@ -449,6 +677,7 @@ var interpolationSpriteObi = {
         width: 38,
     }
 },
+<<<<<<< HEAD
 //     {image:{
 //       top:-3882,
 //       left:-634,
@@ -458,6 +687,17 @@ var interpolationSpriteObi = {
 //         width: 38,
 //     }
 // },
+=======
+    {image:{
+      top:-3882,
+      left:-634,
+    },
+    masque:{
+        height: 65,
+        width: 38,
+    }
+},
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     {image:{
       top:-3882,
       left:-634,
@@ -1155,9 +1395,19 @@ var deplacementSprite = {
       gauche: false,
       
     },
+<<<<<<< HEAD
     action: {
       attaque: false, 
     },
+=======
+    // mouvement: {
+    //   deplacer: false,
+    //   attaquer: false,
+    //   statique: false,
+      
+      
+    // },
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     incrementationDePosition: function(position, increment){
       
       var valeurDeLaPosition = parseFloat(masqueLuke.style[position]);
@@ -1185,21 +1435,53 @@ var deplacementSprite = {
         this.incrementationDePosition('top', 4);
       }
     },
+<<<<<<< HEAD
 
 
     start: function(){
       var ici = this;
 
+=======
+    start: function(){
+      var ici = this;
+
+      // sauvegarde code qui marche
+      
+      // window.addEventListener('keydown', function(evenementSurvenu){
+        
+      //   if ('ArrowRight' === evenementSurvenu.code) {
+      //     ici.directions.droite = true;
+      //   }
+      //   if ('ArrowLeft' === evenementSurvenu.code) {
+      //     ici.directions.gauche = true;
+      //   }
+      //   if ('ArrowUp' === evenementSurvenu.code) {
+      //     ici.directions.haut = true;
+      //   }
+      //   if ('ArrowDown' === evenementSurvenu.code) {
+      //     ici.directions.bas = true;
+      //   }
+      // });
+
+////////////////////////////////////////////////////////////////////
+/////////////code changé ci dessous///////////////////////////////
+
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     window.addEventListener('keydown', function(evenementSurvenu){
               
         if ('KeyD' === evenementSurvenu.code) {
           ici.directions.droite = true;
           redresseImage()
+<<<<<<< HEAD
           mouvement(avanceVersDroite, 15);
+=======
+          mouvement(avanceVersDroite, 9);
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
         }
         if ('KeyA' === evenementSurvenu.code ) {
           ici.directions.gauche = true;
           inverseImage();
+<<<<<<< HEAD
           mouvement(avanceVersDroite, 15);
         }
         if ('KeyW' === evenementSurvenu.code ) {
@@ -1221,6 +1503,26 @@ var deplacementSprite = {
         if ('ArrowUp' === evenementSurvenu.code) {
           mouvement(attaqueHaut, 30);
           ici.action.attaque = true
+=======
+          mouvement(avanceVersDroite, 9);
+        }
+        if ('KeyW' === evenementSurvenu.code ) {
+          ici.directions.haut = true;
+          mouvement(avanceVersDroite, 9);
+        }
+        if ('KeyS' === evenementSurvenu.code) {
+          ici.directions.bas = true;
+          mouvement(avanceVersDroite, 9);
+        }
+        if ('ArrowRight' === evenementSurvenu.code) {
+          mouvement(attaquer, 40);
+        }
+        if ('ArrowLeft' === evenementSurvenu.code) {
+          mouvement(paradeArriere, 30);
+        }
+        if ('ArrowUp' === evenementSurvenu.code) {
+          mouvement(attaqueHaut, 30);
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
         }
         if ('Space' === evenementSurvenu.code) {
           sauter();
@@ -1248,6 +1550,7 @@ var deplacementSprite = {
         if ('KeyS' === evenementSurvenu.code) {
           ici.directions.bas = false;
         }
+<<<<<<< HEAD
         if ('ArrowRight' === evenementSurvenu.code) {
           ici.action.attaque = false;
         }
@@ -1257,6 +1560,8 @@ var deplacementSprite = {
         if ('ArrowUp' === evenementSurvenu.code) {
           ici.action.attaque = false;
         }
+=======
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
       });
 
       window.setInterval(function(){
@@ -1291,7 +1596,11 @@ var margeGauche = imageSprite.style.marginLeft;
 
 
 
+<<<<<<< HEAD
 // fonction recurente selon direction choisie et durée de l'anim du sprite
+=======
+// fonction qui prend en argument le tableau de mouvements 
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
 var mouvement = function(direction, duree) { 
   clearInterval(bouge); 
   var i = 0;        
@@ -1369,15 +1678,45 @@ var apparitionEnnemi = function () {
 ////////////////////////////DARK ANGULAR//////////////////////
 //////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 
 //////////////////////////////////////////////////////////
 // fonction test collisions personnages
 //////////////////////////////////////////////////////////
+=======
+// var coordonneesZoneJeu = gameArea.getBoundingClientRect()
+//   var hautZonejeu = coordonneesZoneJeu.y;
+//   var gaucheZoneJeu = coordonneesZoneJeu.x;
+//   var largeurZoneJeu = coordonneesZoneJeu.width;
+//   var hauteurZoneJeu = coordonneesZoneJeu.height;
+  
+//   var coordonneesJoueur = masqueLuke.getBoundingClientRect();
+//   var hautJoueur = coordonneesJoueur.y;
+//   var gaucheJoueur = coordonneesJoueur.x;
+//   var largeurJoueur = coordonneesJoueur.width;
+//   var hauteurJoueur = coordonneesJoueur.height;
+
+//   var angular = document.getElementById('masqueAngular');
+//   var coordonneesAngular = angular.getBoundingClientRect();
+//   var hautAngular = coordonneesAngular.y;
+//   var gaucheAngular = coordonneesAngular.x;
+//   var largeurAngular = coordonneesAngular.width;
+//   var hauteurAngular = coordonneesAngular.height;
+
+
+
+// fonction test collisions
+
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
 setInterval(function(){
  
 testCollision();
 
+<<<<<<< HEAD
 },30)
+=======
+},100)
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
 
 
 
@@ -1412,6 +1751,7 @@ var testCollision = function() {
       collision = true
       // console.log('collision détectée '+ collision);
       deplacementSprite.directions.droite = false;
+<<<<<<< HEAD
       deplacementSprite.incrementationDePosition('left', -2);
 
       if(deplacementSprite.action.attaque == true) {
@@ -1421,10 +1761,15 @@ var testCollision = function() {
       }
 
 
+=======
+      deplacementSprite.incrementationDePosition('left', -4);
+      monterScore();
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
       return collision
     }
 }
 
+<<<<<<< HEAD
 ///////////////////////////////////////////////////////////////
 // DELIMITATION DE LA ZONE DE JEU  ///////////////////////////
 //////////////////////////////////////////////////////////////
@@ -1470,6 +1815,8 @@ setInterval(function(){
   
   },1)
 
+=======
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -1513,7 +1860,11 @@ controleScore();
 
 var photoCible = document.getElementById('photocible');
 var changerPhoto = function() {
+<<<<<<< HEAD
   photoCible.src='images/sansmasque.jpg'
+=======
+  photoCible.src='../images/sansmasque.jpg'
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
 }
 
 var formation = document.getElementById('formation');
@@ -1523,9 +1874,13 @@ var langue = document.getElementById('langue')
 
 var supprimerFlou = function(paragrapheFlou) {
   paragrapheFlou.classList.remove('flou')
+<<<<<<< HEAD
 }
 
 
 
 
 
+=======
+}
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee

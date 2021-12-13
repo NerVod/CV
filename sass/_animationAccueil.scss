@@ -20,6 +20,7 @@
 
 //  animation partie texte intro
 #phraseIntro {
+<<<<<<< HEAD
   opacity: 0;
   color: $bleuStarWars;
   font-family: $policeSansSerif;
@@ -60,6 +61,68 @@
     opacity: 0;
   }
 }
+=======
+    opacity: 0;
+    color: $bleuStarWars;
+    font-family: $policeSansSerif;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 35%;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    animation: fadeInandOut 6s ease-out; 
+    
+}
+
+@keyframes fadeInandOut {
+    0% {
+        opacity:0;
+    }
+    3% {
+        opacity:0.2;
+    }
+    9% {
+        opacity:0.5;
+    }
+    12% {
+        opacity:0.8;
+    }
+    15% {
+        opacity:1;
+    }
+    90% {
+        opacity:1;
+    }
+    95% {
+        opacity:0.6;
+    }
+    97% {
+        opacity:0.3;
+    }
+    100% {
+        opacity:0
+    }
+  };
+
+
+
+
+
+
+
+// animation partie Logo JavaScript
+
+.javaLogo{
+    // border: 1px solid red;
+    position: absolute;
+    top:30%;
+    opacity: 0;
+    align-self: center;
+    font-family: $policeJedi, sans-serif ;
+    animation: javaLogo 10s ease-out;
+    animation-delay: 6100ms;
+};
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
 
 // animation partie Logo JavaScript
 
@@ -78,11 +141,19 @@
   0% {
     opacity: 0;
     transform: scale(1.5) translateY(-8.75em);
+<<<<<<< HEAD
   }
   20% {
     opacity: 1;
   }
   85% {
+=======
+}
+20%{
+    opacity:1;
+}
+85%{
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
     opacity: 1;
     transform: scale(1);
   }
@@ -112,12 +183,21 @@
   transform: scaleY(0.9);
 }
 #texteDefilant {
+<<<<<<< HEAD
   position: absolute;
   top: 0;
   right: 13%;
   left: 13%;
   height: 100%;
   font-family: $policeSansSerif;
+=======
+    position: absolute;
+    top: 0;
+    right: 13%;
+    left: 13%;
+    height: 100%;
+    font-family: $policeSansSerif;
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
 
   animation: texteDefilant 24s linear;
   animation-delay: 15000ms;
@@ -161,6 +241,7 @@ p {
 }
 
 #imagePersistante {
+<<<<<<< HEAD
   position: absolute;
   top: 32%;
   align-self: center;
@@ -171,3 +252,14 @@ p {
 .visible {
   opacity: 1;
 }
+=======
+    position: absolute;
+    top:32%;
+    align-self: center;
+    transform: scale(1.3);
+}
+
+.visible{
+    opacity: 1;   
+}
+>>>>>>> 6a92dec8c9cfb25c947a0554abb6aae88671aaee
