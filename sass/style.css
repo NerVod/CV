@@ -1,24 +1,24 @@
 @font-face {
-  font-family: "Star Jedi Rounded", sans-serif;
-  src: url("../fonts/star-jedi/Star_Jedi_Rounded.ttf") format("truetype");
+  font-family: "deathStar";
+  src: url("DeathStar.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "Star Jedi", sans-serif;
-  src: url("../fonts/star-jedi/Starjedi.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Star Jedi Hollow", sans-serif;
-  src: url("../fonts/star-jedi/Starjhol.ttf") format("truetype");
+  font-family: "starJedi";
+  src: url("Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background-color: #1b1a1a;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: deathStar, sans-serif;
 }
 
 .pageAccueil {
-  border: 1px solid yellow;
+  border: 1px solid #ffe81f;
   height: 95vh;
   margin: 1em;
   padding: 0;
@@ -27,14 +27,7 @@ body {
   background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
 }
 
-.bandeau {
-  border: 1px solid #ffe81f;
-  height: 12em;
-  margin: 0;
-}
-
 .page {
-  border: 1px solid red;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -42,7 +35,8 @@ body {
 }
 
 .leftAnimation {
-  border: 1px solid #ffe81f;
+  border-top: 1px solid #ffe81f;
+  border-right: 1px solid #ffe81f;
   height: 100%;
   width: 40%;
   position: relative;
@@ -57,7 +51,7 @@ body {
 }
 
 .droiteSelection {
-  border: 1px solid blue;
+  border-top: 1px solid #ffe81f;
   height: 100%;
   width: 60%;
   display: flex;
@@ -70,12 +64,13 @@ body {
   padding-top: 0.5em;
   padding-bottom: 1em;
   align-items: center;
-  font-family: "Star Jedi Rounded", sans-serif;
+  font-family: starJedi, sans-serif;
   height: 4em;
   color: #ffe81f;
   flex-wrap: nowrap;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0;
 }
 
 .characSpecial {
@@ -119,6 +114,7 @@ body {
 }
 
 #phraseIntro {
+  opacity: 0;
   color: #24958f;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 3px;
@@ -160,9 +156,10 @@ body {
 }
 .javaLogo {
   position: absolute;
-  top: 20%;
+  top: 30%;
   opacity: 0;
   align-self: center;
+  font-family: starJedi, sans-serif;
   animation: javaLogo 10s ease-out;
   animation-delay: 6100ms;
 }
@@ -170,7 +167,7 @@ body {
 @keyframes javaLogo {
   0% {
     opacity: 0;
-    transform: scale(1.5) translateY(-6.75em);
+    transform: scale(1.5) translateY(-8.75em);
   }
   20% {
     opacity: 1;
@@ -209,6 +206,7 @@ body {
   right: 13%;
   left: 13%;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
   animation: texteDefilant 24s linear;
   animation-delay: 15000ms;
 }
@@ -251,9 +249,10 @@ p {
 }
 #imagePersistante {
   position: absolute;
-  top: 24%;
+  top: 32%;
   align-self: center;
   transform: scale(1.3);
+  font-family: starJedi;
 }
 
 .visible {
@@ -261,9 +260,9 @@ p {
 }
 
 #selectHaut {
-  border: 1px solid green;
-  height: 25%;
+  height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -275,17 +274,22 @@ p {
 }
 
 #selectCentre {
-  border: 1px solid orange;
   height: 50%;
   display: flex;
+  justify-content: center;
+  flex-basis: auto;
 }
 
 #selectGauche {
-  border: 1px solid blue;
+  height: 321px;
   width: 30%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 2;
+  position: relative;
+  align-self: center;
 }
 
 #selectGauche a {
@@ -294,13 +298,59 @@ p {
   font-size: 2em;
 }
 
-#photoChange {
-  border: 1px solid crimson;
-  width: 40%;
+#zoneHautGauche, #zoneHautDroite, #zoneBasGauche, #zoneBasDroite {
+  height: 100%;
+  width: 33%;
+  flex-grow: 2;
+}
+
+#zoneHautCentre, #zoneBasCentre {
+  height: 100%;
+  width: 341px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+#zoneHautCentre a, #zoneBasCentre a {
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.dashBords {
+  height: 2px;
+  width: 60%;
+}
+
+.dash {
+  height: 2px;
+  width: 100%;
+}
+
+.selecteurHover:hover .dash {
+  background-color: #24958f;
+  box-shadow: 0px 20px 30px 17px rgba(36, 149, 143, 0.71);
+}
+
+.selecteurHover:hover .dashBords {
+  background-color: #24958f;
+  box-shadow: 0px 20px 30px 17px rgba(36, 149, 143, 0.71);
+}
+
+#photoChange {
+  display: flex;
+  align-self: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  min-height: 321px;
+  min-width: 241px;
+  border-radius: 20px 20px;
 }
 
 #imageSprite {
@@ -309,14 +359,22 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
+  background-image: url(../images/spriteBen.png);
+  background-size: scale(0.4);
+  margin-left: -1px;
+  margin-top: -325px;
 }
 
 #selectDroite {
-  border: 1px solid goldenrod;
+  height: 321px;
   width: 30%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 2;
+  position: relative;
+  align-self: center;
 }
 
 #selectDroite a {
@@ -326,8 +384,7 @@ p {
 }
 
 #selectBas {
-  border: 1px solid violet;
-  height: 25%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,6 +394,219 @@ p {
   text-decoration: none;
   color: #24958f;
   font-size: 2em;
+}
+
+#filAriane {
+  height: 5vh;
+  border: 1px solid #ffe81f;
+  font-family: starJedi;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8em;
+  padding-top: -20px;
+  padding-bottom: -20px;
+}
+
+#filAriane a {
+  text-decoration: none;
+  color: #ffe81f;
+}
+
+#filAriane div:hover {
+  transform: scale(1.2);
+  border-radius: 8px 8px;
+}
+
+#filAriane > div:nth-child(1) > a {
+  color: #24958f;
+}
+
+.itemMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dash2 {
+  height: 2px;
+  width: 100%;
+}
+
+.itemMenu:hover .dash {
+  background-color: #24958f;
+  box-shadow: 0px 20px 30px 17px rgba(36, 149, 143, 0.71);
+}
+
+#commandesJeu {
+  height: 4em;
+  width: 100%;
+  border: 1px solid #ffe81f;
+  font-family: starJedi;
+  display: flex;
+  justify-content: space-around;
+}
+
+#mouvements {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 70%;
+  font-family: starJedi;
+  color: #ffe81f;
+}
+
+#jeu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 30%;
+  font-family: starJedi;
+  color: #ffe81f;
+}
+
+#start {
+  color: #24958f;
+}
+
+#start :hover {
+  cursor: pointer;
+}
+
+#jeu > div:nth-child(1) {
+  margin-left: 2rem;
+  font-size: 1.4em;
+}
+
+#jeu > div:nth-child(2) {
+  margin-left: 2.5em;
+}
+
+#jeu > div:nth-child(3) {
+  margin-right: 6em;
+}
+
+#page {
+  position: relative;
+}
+
+#competences {
+  border: 1px solid #ffe81f;
+  width: 350px;
+  min-height: 100%;
+  position: relative;
+}
+
+#zoneJeu {
+  background-image: url(../images/STARWARS-SNOKE-STAR-DESTROYER.jpg);
+  background-position-x: center;
+  background-position-y: -20px;
+  background-origin: padding-box;
+  height: 100%;
+  width: 100%;
+}
+
+.fleche {
+  font-size: 1.6em;
+  font-weight: 800;
+}
+
+#mouvements > div:nth-child(3) > p {
+  padding-top: 5px;
+}
+
+#competences {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#photocible {
+  transform: scale(0.8);
+  border-radius: 15px 15px;
+  height: 180px;
+}
+
+#formation,
+#bulletPoints,
+#XP,
+#langue {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffe81f;
+}
+
+#formation ul,
+#bulletPoints ul,
+#XP ul,
+#langue ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+#formation p,
+#bulletPoints p,
+#XP p,
+#langue p {
+  font-family: starJedi;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: -8px;
+}
+
+.niveau {
+  margin-left: 20px;
+}
+
+.flou {
+  filter: blur(1.5rem);
+}
+
+.bleu {
+  color: #24958f;
+}
+
+#decor {
+  width: 100%;
+  height: 60%;
+}
+
+#gameArea {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  border-top: 1px solid #ffe81f;
+}
+
+#masqueLuke {
+  height: 68px;
+  overflow: hidden;
+  position: absolute;
+  width: 35px;
+  top: 40%;
+  visibility: hidden;
+}
+
+#Luke {
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+#masqueAngular {
+  height: 35px;
+  width: 120px;
+  position: absolute;
+  top: 45%;
+  right: 50px;
+  visibility: hidden;
+}
+
+#darkAngular {
+  height: 35px;
+  width: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */

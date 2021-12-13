@@ -2,11 +2,12 @@ body {
     background-color: $background-mainPage;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: deathStar , sans-serif;
+
 }
 
 .pageAccueil{
-    border: 1px solid yellow;
+    border: 1px solid $jauneStarWars;
     height: 95vh;
     margin: 1em;
     padding: 0;
@@ -15,13 +16,8 @@ body {
     background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
 }
 
-.bandeau {
-    border : 1px solid $jauneStarWars;
-    height : 12em;
-    margin:0;
-}
 .page{
-    border: 1px solid red;
+    // border: 1px solid red;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -30,7 +26,8 @@ body {
 }
 
 .leftAnimation{
-    border: 1px solid $jauneStarWars;
+    border-top: 1px solid $jauneStarWars;
+    border-right: 1px solid $jauneStarWars;
     height: 100%;
     width: 40%;
     position: relative;
@@ -45,7 +42,7 @@ body {
 }
 
 .droiteSelection {
-    border: 1px solid blue;
+    border-top: 1px solid $jauneStarWars;
     height: 100%;
     width: 60%;
     display: flex;

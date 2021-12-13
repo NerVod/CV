@@ -1,17 +1,15 @@
 
 @font-face {
-    font-family: 'Star Jedi Rounded', sans-serif;
-    src: url('../fonts/star-jedi/Star_Jedi_Rounded.ttf')  format('truetype');
+    font-family: "deathStar";
+    src: url("DeathStar.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
-
 @font-face {
-    font-family: 'Star Jedi', sans-serif;
-    src: url('../fonts/star-jedi/Starjedi.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Star Jedi Hollow', sans-serif;
-    src: url('../fonts/star-jedi/Starjhol.ttf') format("truetype");
+    font-family: "starJedi";
+    src: url("Starjedi.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 // @import url('http://fonts.cdnfonts.com/css/star-jedi-rounded');
