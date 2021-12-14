@@ -15,6 +15,9 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: deathStar, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .pageAccueil {
@@ -25,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   background: url("../images/fondEtoile.png") repeat fixed 50% 50%;
+  width: 95%;
 }
 
 .page {
@@ -396,6 +400,10 @@ p {
   font-size: 2em;
 }
 
+#pageJeu {
+  width: 95%;
+}
+
 #filAriane {
   height: 5vh;
   border: 1px solid #ffe81f;
@@ -440,7 +448,7 @@ p {
 #commandesJeu {
   height: 4em;
   width: 100%;
-  border: 1px solid #ffe81f;
+  border-bottom: 1px solid #ffe81f;
   font-family: starJedi;
   display: flex;
   justify-content: space-around;
@@ -492,7 +500,7 @@ p {
 }
 
 #competences {
-  border: 1px solid #ffe81f;
+  border-right: 1px solid #ffe81f;
   width: 350px;
   min-height: 100%;
   position: relative;
@@ -512,7 +520,7 @@ p {
   font-weight: 800;
 }
 
-#mouvements > div:nth-child(3) > p {
+#mouvements > div:nth-child(2) > p {
   padding-top: 5px;
 }
 
@@ -607,6 +615,16 @@ p {
 #darkAngular {
   height: 35px;
   width: 120px;
+}
+
+@media screen and (min-width: 1600px) {
+  .pageAccueil {
+    width: 85%;
+  }
+
+  #pageJeu {
+    width: 85%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

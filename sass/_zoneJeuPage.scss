@@ -1,3 +1,7 @@
+#pageJeu {
+  width: $largeurPage;
+}
+
 #filAriane {
   height: 5vh;
   border: 1px solid $jauneStarWars;
@@ -40,7 +44,7 @@
 #commandesJeu {
   height: 4em;
   width: 100%;
-  border: 1px solid $jauneStarWars;
+  border-bottom: 1px solid $jauneStarWars;
   font-family: $policeStarJedi;
   display: flex;
   justify-content: space-around;
@@ -91,7 +95,7 @@
 }
 
 #competences {
-  border: 1px solid $jauneStarWars;
+  border-right: 1px solid $jauneStarWars;
   width: 350px;
   min-height: 100%;
   position: relative;
@@ -111,6 +115,6 @@
   font-weight: 800;
 }
 
-#mouvements > div:nth-child(3) > p {
+#mouvements > div:nth-child(2) > p {
   padding-top: 5px;
 }

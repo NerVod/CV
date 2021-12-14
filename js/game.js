@@ -1310,7 +1310,7 @@ var deplacementSprite = {
       if ("KeyD" === evenementSurvenu.code) {
         ici.directions.droite = true;
         redresseImage();
-        mouvement(avanceVersDroite, 9);
+        mouvement(avanceVersDroite, 15);
       }
       if ("KeyA" === evenementSurvenu.code) {
         ici.directions.gauche = true;
@@ -1457,7 +1457,7 @@ start.addEventListener("click", function () {
 
 var apparitionJoueur = function () {
   leSprite.style.visibility = "visible";
-  leSprite.style.top = "40%";
+  leSprite.style.top = "150px";
   leSprite.style.left = "50px";
   mouvement(statique, 100);
 };
@@ -1617,12 +1617,12 @@ var supprimerFlou = function (paragrapheFlou) {
     var coordonneesZoneJeu = zoneJeu.getBoundingClientRect();
     var hautZoneJeu = coordonneesZoneJeu.y;
     var hauteurZoneJeu = coordonneesZoneJeu.height;
-     console.log(coordonneesZoneJeu)
+    //  console.log(coordonneesZoneJeu)
   
     var coordonneesAngular = angular.getBoundingClientRect();
     var hautAngular = coordonneesAngular.y;
     var hauteurAngular = coordonneesAngular.height;
-    console.log(coordonneesAngular);
+    // console.log(coordonneesAngular);
 
     if (hautAngular == hautZoneJeu) {
       incrementAngular = -incrementAngular;
