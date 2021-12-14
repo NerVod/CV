@@ -1243,6 +1243,7 @@ var interpolationSpriteObi = {
 
 var masqueLuke = window.document.getElementById("masqueLuke");
 var gameArea = window.document.getElementById("gameArea");
+var angular = window.document.getElementById("darkAngular")
 
 var deplacementSprite = {
   directions: {
@@ -1265,7 +1266,29 @@ var deplacementSprite = {
 
     masqueLuke.style[position] = valeurDeLaPosition + "px";
   },
-  leMoteurPourLesAnimations: function () {
+
+
+
+  incrementationDePositionAngular: function (position, increment) {
+    var valeurDeLaPosition = parseFloat(angular.style[position]);
+
+    if (isNaN(valeurDeLaPosition)) {
+      valeurDeLaPosition = 0;
+    }
+
+    valeurDeLaPosition = valeurDeLaPosition + increment;
+
+    angular.style[position] = valeurDeLaPosition + "px";
+  },
+
+
+
+
+
+
+
+
+  conditionAnimations: function () {
     if (this.directions.droite) {
       this.incrementationDePosition("left", 4);
     }
@@ -1345,14 +1368,14 @@ var deplacementSprite = {
     });
 
     window.setInterval(function () {
-      ici.leMoteurPourLesAnimations();
+      ici.conditionAnimations();
     }, 25);
   },
 };
 
 deplacementSprite.start();
 
-console.log(deplacementSprite);
+// console.log(deplacementSprite);
 
 /**
  * DEPLACEMENT DE l'IMAGE DANS LE SPRITE
@@ -1374,7 +1397,7 @@ var margeGauche = imageSprite.style.marginLeft;
 
 // fonction recurente selon direction choisie et durée de l'anim du sprite
 var mouvement = function (direction, duree) {
-  clearInterval(bouge);
+  // clearInterval(bouge);
   var i = 0;
   var bouge = setInterval(function () {
     if (i < direction.length) {
@@ -1429,6 +1452,7 @@ var starter = window.document.getElementById("start");
 start.addEventListener("click", function () {
   apparitionJoueur();
   apparitionEnnemi();
+ 
 });
 
 var apparitionJoueur = function () {
@@ -1582,27 +1606,35 @@ var supprimerFlou = function (paragrapheFlou) {
   paragrapheFlou.classList.remove("flou");
 };
 
-///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
-var mouvementHautAngular = function () {
-  var positionAndular = angular.getBoundingClientRect();
-  var coordonneesZoneJeu = zoneJeu.getBoundingClientRect();
+    
+  var incrementAngular = 1;
+    var deplacementAngular = function () {
+    
 
-  var deplacementAngular = {
-    directions: {
-      haut: false,
-      bas: false,
-    },
+    var coordonneesZoneJeu = zoneJeu.getBoundingClientRect();
+    var hautZoneJeu = coordonneesZoneJeu.y;
+    var hauteurZoneJeu = coordonneesZoneJeu.height;
+     console.log(coordonneesZoneJeu)
+  
+    var coordonneesAngular = angular.getBoundingClientRect();
+    var hautAngular = coordonneesAngular.y;
+    var hauteurAngular = coordonneesAngular.height;
+    console.log(coordonneesAngular);
 
-    incrementationDePosition: function (position, increment) {
-      var valeurDeLaPosition = parseFloat(angular.style[position]);
-      if (isNaN(valeurDeLaPosition)) {
-        valeurDeLaPosition = 0;
-      }
+    if (hautAngular == hautZoneJeu) {
+      incrementAngular = -incrementAngular;
+    } else if (hautAngular + hauteurAngular > (hautZoneJeu + hauteurZoneJeu -10)) {
+      incrementAngular = -incrementAngular
+    }
+    deplacementSprite.incrementationDePositionAngular("top", incrementAngular)
+    
+  }
 
-      valeurDeLaPosition = valeurDeLaPosition + increment;
-
-      angular.style[position] = valeurDeLaPosition + "px";
-    },
-  };
-};
+  
+  
+  setInterval(function () {
+    deplacementAngular();
+  }, 10);
