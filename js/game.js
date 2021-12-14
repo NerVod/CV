@@ -1465,6 +1465,9 @@ var apparitionJoueur = function () {
 var apparitionEnnemi = function () {
   darkAngular.style.visibility = "visible";
 };
+var disparitionEnnemi = function() {
+  darkAngular.style.visibility = "hidden";
+}
 
 //////////////////////////////////////////////////////////////
 ////////////////////////////DARK ANGULAR//////////////////////
@@ -1588,10 +1591,13 @@ var controleScore = function () {
     if (scoreReference > 500) {
       supprimerFlou(langue);
       supprimerInvisible();
+      disparitionEnnemi();
     }
   }, 20);
 };
+
 controleScore();
+
 
 var photoCible = document.getElementById("photocible");
 var changerPhoto = function () {
@@ -1610,8 +1616,6 @@ var supprimerFlou = function (paragrapheFlou) {
 var supprimerInvisible = function() {
   var ecranFinPartie = document.getElementById('gagne');
 ecranFinPartie.classList.remove("invisible")
-  
-
 }
 
 
