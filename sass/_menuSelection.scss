@@ -1,127 +1,118 @@
 #selectHaut {
-    // border: 1px solid green;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+  // border: 1px solid green;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 #selectHaut a {
-    text-decoration: none;
-    color: $bleuStarWars;
-    font-size: 2em;
+  text-decoration: none;
+  color: $bleuStarWars;
+  font-size: 2em;
 }
 
 #selectCentre {
-    // border: 1px solid orange;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    flex-basis: auto;
-    
+  // border: 1px solid orange;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-basis: auto;
 }
 
 #selectGauche {
-    // border: 1px solid blue;
-    height: 321px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 2;
-    position: relative;
-    align-self: center;
-    
+  // border: 1px solid blue;
+  height: 321px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  position: relative;
+  align-self: center;
 }
 #selectGauche a {
-    text-decoration: none;
-    color: $jauneStarWars;
-    font-size: 2em;
+  text-decoration: none;
+  color: $jauneStarWars;
+  font-size: 2em;
 }
 
-#zoneHautGauche, #zoneHautDroite, #zoneBasGauche, #zoneBasDroite {
-    height: 100%;
-    width: 33%;
-    // border : 1px solid orangered;
-    flex-grow: 2;
+#zoneHautGauche,
+#zoneHautDroite,
+#zoneBasGauche,
+#zoneBasDroite {
+  height: 100%;
+  width: 33%;
+  // border : 1px solid orangered;
+  flex-grow: 2;
 }
 
-#zoneHautCentre , #zoneBasCentre {
-   height: 100%;
-   width: 341px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-content: center;
-   flex-wrap: nowrap;
-    
-    
+#zoneHautCentre,
+#zoneBasCentre {
+  height: 100%;
+  width: 341px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
 }
-#zoneHautCentre a, #zoneBasCentre a{
-    display: inline-block;
-    text-align: center;
-    align-self: center;
-    flex-wrap: nowrap;
-    overflow: visible;
-    
+#zoneHautCentre a,
+#zoneBasCentre a {
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  overflow: visible;
 }
 
 .dashBords {
-    height: 2px;
-    width: 60%;
+  height: 2px;
+  width: 60%;
 }
 .dash {
-    height: 2px;
-    width: 100%;
+  height: 2px;
+  width: 100%;
 }
 
 // .selecteurHover:hover{
 //     transform: scale(1.2);
 // }
 
-.selecteurHover:hover .dash{
-    background-color: $bleuStarWars;
-    box-shadow: 0px 20px 30px 17px rgba(36,149,143,0.71);
+.selecteurHover:hover .dash {
+  background-color: $bleuStarWars;
+  box-shadow: 0px 20px 30px 17px rgba(36, 149, 143, 0.71);
 }
-.selecteurHover:hover .dashBords{
-    background-color: $bleuStarWars;
-    box-shadow: 0px 20px 30px 17px rgba(36,149,143,0.71);
+.selecteurHover:hover .dashBords {
+  background-color: $bleuStarWars;
+  box-shadow: 0px 20px 30px 17px rgba(36, 149, 143, 0.71);
 }
-
-
 
 #photoChange {
-    // border: 1px solid crimson;
-    // width: 40%;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    position:relative;
-    overflow: hidden;
-    // height:321px;
-    // width:241px;
-    min-height: 321px;
-    min-width: 241px;
-    border-radius: 20px 20px;
-    
-
+  // border: 1px solid crimson;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 321px;
+  min-width: 241px;
+  // border-radius: 20px 20px;
+  border-radius: 48% 48%;
 }
 
 #imageSprite {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    
-    background-image: url(../images/spriteBen.png);
-    background-size: scale(0.4);
-    margin-left: -1px;
-    margin-top: -325px;
-    
-    
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-image: url(../images/spriteBen.png);
+  background-size: scale(0.4);
+  margin-left: -1px;
+  margin-top: -325px;
 }
 
 // #photoChange img {
@@ -129,44 +120,34 @@
 //     // width: 100%;
 // }
 
-
-
-
 #selectDroite {
-    // border: 1px solid goldenrod;
-    height: 321px;;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 2;
-    position: relative;
-    align-self: center;
-    
+  // border: 1px solid goldenrod;
+  height: 321px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  position: relative;
+  align-self: center;
 }
 #selectDroite a {
-    text-decoration: none;
-    color: $jauneStarWars;
-    font-size: 2em;
+  text-decoration: none;
+  color: $jauneStarWars;
+  font-size: 2em;
 }
-
-
-
-
 
 #selectBas {
-    // border: 1px solid violet;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // border: 1px solid violet;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-    
 #selectBas a {
-    text-decoration: none;
-    color: $bleuStarWars;
-    font-size: 2em;
+  text-decoration: none;
+  color: $bleuStarWars;
+  font-size: 2em;
 }
-        

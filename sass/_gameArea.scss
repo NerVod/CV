@@ -1,6 +1,12 @@
 #decor {
   width: 100%;
   height: 60%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color:$jauneStarWars;
+  font-family: $policeStarJedi;
+  font-size: 1.5em;
   //   border: 1px solid red;
 }
 
@@ -41,4 +47,37 @@
   width: 120px;
 
   // border: 1px solid red;
+}
+
+#gagne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hyperspace {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  border-radius: 45% 45%
+}
+
+.paragrapheVictoire {
+  color:$jauneStarWars;
+  
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.lienVictoire {
+  text-decoration: none;
+  color:$bleuStarWars;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.invisible{
+  visibility: hidden;
 }

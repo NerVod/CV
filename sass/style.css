@@ -302,13 +302,17 @@ p {
   font-size: 2em;
 }
 
-#zoneHautGauche, #zoneHautDroite, #zoneBasGauche, #zoneBasDroite {
+#zoneHautGauche,
+#zoneHautDroite,
+#zoneBasGauche,
+#zoneBasDroite {
   height: 100%;
   width: 33%;
   flex-grow: 2;
 }
 
-#zoneHautCentre, #zoneBasCentre {
+#zoneHautCentre,
+#zoneBasCentre {
   height: 100%;
   width: 341px;
   display: flex;
@@ -318,7 +322,8 @@ p {
   flex-wrap: nowrap;
 }
 
-#zoneHautCentre a, #zoneBasCentre a {
+#zoneHautCentre a,
+#zoneBasCentre a {
   display: inline-block;
   text-align: center;
   align-self: center;
@@ -354,7 +359,7 @@ p {
   overflow: hidden;
   min-height: 321px;
   min-width: 241px;
-  border-radius: 20px 20px;
+  border-radius: 48% 48%;
 }
 
 #imageSprite {
@@ -579,6 +584,12 @@ p {
 #decor {
   width: 100%;
   height: 60%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #ffe81f;
+  font-family: starJedi;
+  font-size: 1.5em;
 }
 
 #gameArea {
@@ -615,6 +626,38 @@ p {
 #darkAngular {
   height: 35px;
   width: 120px;
+}
+
+#gagne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hyperspace {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  border-radius: 45% 45%;
+}
+
+.paragrapheVictoire {
+  color: #ffe81f;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.lienVictoire {
+  text-decoration: none;
+  color: #24958f;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 @media screen and (min-width: 1600px) {

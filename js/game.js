@@ -1587,6 +1587,7 @@ var controleScore = function () {
     }
     if (scoreReference > 500) {
       supprimerFlou(langue);
+      supprimerInvisible();
     }
   }, 20);
 };
@@ -1605,6 +1606,14 @@ var langue = document.getElementById("langue");
 var supprimerFlou = function (paragrapheFlou) {
   paragrapheFlou.classList.remove("flou");
 };
+
+var supprimerInvisible = function() {
+  var ecranFinPartie = document.getElementById('gagne');
+ecranFinPartie.classList.remove("invisible")
+  
+
+}
+
 
 ////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////
