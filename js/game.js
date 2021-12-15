@@ -1330,15 +1330,16 @@ var deplacementSprite = {
         ici.action.attaque = true;
       }
       if ("ArrowLeft" === evenementSurvenu.code) {
-        mouvement(paradeArriere, 30);
+        mouvement(paradeArriere, 40);
         ici.action.attaque = true;
       }
       if ("ArrowUp" === evenementSurvenu.code) {
-        mouvement(attaqueHaut, 30);
+        mouvement(attaqueHaut, 40);
         ici.action.attaque = true;
       }
-      if ("Space" === evenementSurvenu.code) {
-        sauter();
+      if ("ArrowDown" === evenementSurvenu.code) {
+        mouvement(attaquer, 40);
+        ici.action.attaque = true;
       }
     });
 
@@ -1358,12 +1359,19 @@ var deplacementSprite = {
       }
       if ("ArrowRight" === evenementSurvenu.code) {
         ici.action.attaque = false;
+        combat1.play();
       }
       if ("ArrowLeft" === evenementSurvenu.code) {
         ici.action.attaque = false;
+        combat2.play()
       }
       if ("ArrowUp" === evenementSurvenu.code) {
         ici.action.attaque = false;
+        combat4.play()
+      }
+      if ("Arrow" === evenementSurvenu.code) {
+        ici.action.attaque = false;
+        combat1.play();
       }
     });
 
@@ -1452,7 +1460,8 @@ var starter = window.document.getElementById("start");
 start.addEventListener("click", function () {
   apparitionJoueur();
   apparitionEnnemi();
- 
+  resetScore();
+
 });
 
 var apparitionJoueur = function () {
@@ -1460,6 +1469,10 @@ var apparitionJoueur = function () {
   leSprite.style.top = "150px";
   leSprite.style.left = "50px";
   mouvement(statique, 100);
+};
+var disparitionJoueur = function () {
+  leSprite.style.visibility = "hidden";
+  
 };
 
 var apparitionEnnemi = function () {
@@ -1517,6 +1530,8 @@ var testCollision = function () {
 
     if (deplacementSprite.action.attaque == true) {
       monterScore();
+    } else {
+      perdreVie();
     }
 
     return collision;
@@ -1592,11 +1607,54 @@ var controleScore = function () {
       supprimerFlou(langue);
       supprimerInvisible();
       disparitionEnnemi();
+      combatMusique.pause();
+      finalMusique.play();
     }
   }, 20);
 };
 
 controleScore();
+
+//////////////////////////////////////////////////////////////////////////
+// gestion des PV///////////////
+////////////////////////////////////////////
+
+
+var pv = 1000;
+
+var perdreVie = function() {
+  if(pv >= 10){
+    pv = pv - 10;
+  }
+  var vie = document.getElementById('pointsVie');
+  vie.innerHTML = 'points de vie : '+pv;
+  if(pv <= 0){
+    disparitionJoueur();
+    var retry = document.getElementById('retry');
+    retry.style.visibility ='visible';   
+  }
+  // console.log(pv)
+};
+
+var resetScore = function(){
+  pv = 1000;
+  var vie = document.getElementById('pointsVie');
+  vie.innerHTML = 'points de vie : '+pv;
+}; 
+
+
+var retry = window.document.getElementById("retry");
+retry.addEventListener("click", function () {
+  apparitionJoueur();
+  apparitionEnnemi();
+  resetScore();
+  retry.style.visibility='hidden';
+});
+
+
+/////////////////////////////////////////////////////////////////
+///deblocage items gagnés/////////////////////////////////////
+///////////////////////////////////////////////////////////////
 
 
 var photoCible = document.getElementById("photocible");
@@ -1637,9 +1695,9 @@ ecranFinPartie.classList.remove("invisible")
     var hauteurAngular = coordonneesAngular.height;
     // console.log(coordonneesAngular);
 
-    if (hautAngular == hautZoneJeu) {
+    if (hautAngular <= hautZoneJeu) {
       incrementAngular = -incrementAngular;
-    } else if (hautAngular + hauteurAngular > (hautZoneJeu + hauteurZoneJeu -10)) {
+    } else if (hautAngular + hauteurAngular >= (hautZoneJeu + hauteurZoneJeu -10)) {
       incrementAngular = -incrementAngular
     }
     deplacementSprite.incrementationDePositionAngular("top", incrementAngular)
@@ -1650,4 +1708,26 @@ ecranFinPartie.classList.remove("invisible")
   
   setInterval(function () {
     deplacementAngular();
-  }, 10);
+  }, 1);
+
+///////////////////////////////////////////////////////////
+/////////////////////////BRUITAGES////////////////////////
+///////////////////////////////////////////////////////////  
+var generique = new Audio('sounds/star-wars-theme.mp3')
+var bruitSabre = new Audio('sounds/bruit-sabre-laser.mp3')
+var combat1 = new Audio('sounds/lightsaber-duel1.mp3')
+var combat2 = new Audio('sounds/lightsaber-duel2.mp3')
+var combat3 = new Audio('sounds/lightsaber-duel3.mp3')
+var combat4 = new Audio('sounds/lightsaber-duel4.mp3')
+var combatMusique = new Audio('sounds/Duel-Of-The-Fates.mp3')
+var finalMusique = new Audio('sounds/A-New-Hope-Ending-theme.mp3')
+
+
+starter.addEventListener('click', function(){
+  combatMusique.play();
+  bruitSabre.play();
+});
+
+
+
+

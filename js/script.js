@@ -178,3 +178,35 @@ var interpolationSpriteBen = {
     },
   },
 };
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////BRUITAGES  INTRO///////////////////////////
+/////////////////////////////////////////////////////////////////
+
+var hoverAffontement = document.getElementById('zoneHautCentre');
+var hoverCv = document.getElementById('zoneBasCentre');
+var hoverLienWhire = document.getElementById('selectGauche');
+var hoverLienLinkedIn = document.getElementById('selectDroite');
+
+
+var hyperspace = new Audio('sounds/Hyperspace.mp3')
+
+hoverAffontement.addEventListener('mouseenter', function(){
+  var combat4 = new Audio('sounds/lightsaber-duel4.mp3')
+  combat4.play();
+});
+
+hoverCv.addEventListener('mouseenter', function(){
+  var r2d2 = new Audio('sounds/r2d2.mp3')
+  r2d2.play();
+});
+
+hoverLienWhire.addEventListener('mouseenter', function(){
+  var hyperspace = new Audio('sounds/Hyperspace.mp3')
+  hyperspace.play();
+});
+
+hoverLienLinkedIn.addEventListener('mouseenter', function(){
+  var hyperspace = new Audio('sounds/Hyperspace.mp3')
+  hyperspace.play();
+});
