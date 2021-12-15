@@ -281,24 +281,24 @@ p {
 }
 
 #selectHaut {
-  height: 100%;
+  align-items: center;
   display: flex;
   flex-direction: row;
+  height: 100%;
   justify-content: center;
-  align-items: center;
 }
 
 #selectHaut a {
-  text-decoration: none;
   color: #24958f;
   font-size: 2em;
+  text-decoration: none;
 }
 
 #selectCentre {
-  height: 50%;
   display: flex;
-  justify-content: center;
   flex-basis: auto;
+  height: 50%;
+  justify-content: center;
 }
 
 #selectGauche {
@@ -314,38 +314,38 @@ p {
 }
 
 #selectGauche a {
-  text-decoration: none;
   color: #ffe81f;
   font-size: 2em;
+  text-decoration: none;
 }
 
 #zoneHautGauche,
 #zoneHautDroite,
 #zoneBasGauche,
 #zoneBasDroite {
+  flex-grow: 2;
   height: 100%;
   width: 33%;
-  flex-grow: 2;
 }
 
 #zoneHautCentre,
 #zoneBasCentre {
-  height: 100%;
-  width: 341px;
+  align-content: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   flex-wrap: nowrap;
+  height: 100%;
+  justify-content: center;
+  width: 341px;
 }
 
 #zoneHautCentre a,
 #zoneBasCentre a {
-  display: inline-block;
-  text-align: center;
   align-self: center;
+  display: inline-block;
   flex-wrap: nowrap;
   overflow: visible;
+  text-align: center;
 }
 
 .dashBords {
@@ -369,14 +369,14 @@ p {
 }
 
 #photoChange {
-  display: flex;
   align-self: center;
+  border-radius: 48% 48%;
+  display: flex;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
   min-height: 321px;
   min-width: 241px;
-  border-radius: 48% 48%;
+  overflow: hidden;
+  position: relative;
 }
 
 #imageSprite {
@@ -392,34 +392,34 @@ p {
 }
 
 #selectDroite {
-  height: 321px;
-  width: 30%;
+  align-items: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex-grow: 2;
+  height: 321px;
+  justify-content: center;
   position: relative;
-  align-self: center;
+  width: 30%;
 }
 
 #selectDroite a {
-  text-decoration: none;
   color: #ffe81f;
   font-size: 2em;
+  text-decoration: none;
 }
 
 #selectBas {
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }
 
 #selectBas a {
-  text-decoration: none;
   color: #24958f;
   font-size: 2em;
+  text-decoration: none;
 }
 
 #pageJeu {

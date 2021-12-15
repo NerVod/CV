@@ -1327,18 +1327,22 @@ var deplacementSprite = {
       }
       if ("ArrowRight" === evenementSurvenu.code) {
         mouvement(attaquer, 40);
+        combat1.play();
         ici.action.attaque = true;
       }
       if ("ArrowLeft" === evenementSurvenu.code) {
         mouvement(paradeArriere, 40);
+        combat2.play()
         ici.action.attaque = true;
       }
       if ("ArrowUp" === evenementSurvenu.code) {
         mouvement(attaqueHaut, 40);
+        combat4.play()
         ici.action.attaque = true;
       }
       if ("ArrowDown" === evenementSurvenu.code) {
         mouvement(attaquer, 40);
+        combat1.play();
         ici.action.attaque = true;
       }
     });
@@ -1359,19 +1363,15 @@ var deplacementSprite = {
       }
       if ("ArrowRight" === evenementSurvenu.code) {
         ici.action.attaque = false;
-        combat1.play();
       }
       if ("ArrowLeft" === evenementSurvenu.code) {
         ici.action.attaque = false;
-        combat2.play()
       }
       if ("ArrowUp" === evenementSurvenu.code) {
         ici.action.attaque = false;
-        combat4.play()
       }
-      if ("Arrow" === evenementSurvenu.code) {
+      if ("ArrowDown" === evenementSurvenu.code) {
         ici.action.attaque = false;
-        combat1.play();
       }
     });
 
@@ -1613,6 +1613,7 @@ var controleScore = function () {
       supprimerFlou(langue);
       supprimerInvisible();
       disparitionEnnemi();
+      victoire();
       combatMusique.pause();
       finalMusique.play();
     }
@@ -1711,8 +1712,6 @@ ecranFinPartie.classList.remove("invisible")
     
   }
 
-  
-  
   setInterval(function () {
     deplacementAngular();
   }, 1);
@@ -1722,10 +1721,10 @@ ecranFinPartie.classList.remove("invisible")
 ///////////////////////////////////////////////////////////  
 var generique = new Audio('sounds/star-wars-theme.mp3')
 var bruitSabre = new Audio('sounds/bruit-sabre-laser.mp3')
-var combat1 = new Audio('sounds/lightsaber-duel1.mp3')
-var combat2 = new Audio('sounds/lightsaber-duel2.mp3')
-var combat3 = new Audio('sounds/lightsaber-duel3.mp3')
-var combat4 = new Audio('sounds/lightsaber-duel4.mp3')
+var combat1 = new Audio('sounds/Lightsaber-duel1.mp3')
+var combat2 = new Audio('sounds/Lightsaber-duel2.mp3')
+var combat3 = new Audio('sounds/Lightsaber-duel3.mp3')
+var combat4 = new Audio('sounds/Lightsaber-duel4.mp3')
 var combatMusique = new Audio('sounds/Duel-Of-The-Fates.mp3')
 var finalMusique = new Audio('sounds/A-New-Hope-Ending-theme.mp3')
 
