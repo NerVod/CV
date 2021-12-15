@@ -1460,7 +1460,7 @@ var starter = window.document.getElementById("start");
 start.addEventListener("click", function () {
   apparitionJoueur();
   apparitionEnnemi();
-  resetScore();
+  razScore();
 
 });
 
@@ -1613,7 +1613,6 @@ var controleScore = function () {
       supprimerFlou(langue);
       supprimerInvisible();
       disparitionEnnemi();
-      victoire();
       combatMusique.pause();
       finalMusique.play();
     }
