@@ -568,6 +568,10 @@ p {
   visibility: hidden;
 }
 
+#retry:hover {
+  cursor: pointer;
+}
+
 #competences {
   max-height: 100%;
   display: flex;

@@ -1586,6 +1586,12 @@ var monterScore = function () {
   score.innerText = nouveauScore;
 };
 
+var razScore = function() {
+  var nouveauScore = 0
+  score.innerText = nouveauScore;
+
+}
+
 // actions au score du joueur
 
 var controleScore = function () {
@@ -1636,7 +1642,7 @@ var perdreVie = function() {
   // console.log(pv)
 };
 
-var resetScore = function(){
+var resetPv = function(){
   pv = 1000;
   var vie = document.getElementById('pointsVie');
   vie.innerHTML = 'points de vie : '+pv;
@@ -1647,7 +1653,8 @@ var retry = window.document.getElementById("retry");
 retry.addEventListener("click", function () {
   apparitionJoueur();
   apparitionEnnemi();
-  resetScore();
+  resetPv();
+  razScore();
   retry.style.visibility='hidden';
 });
 

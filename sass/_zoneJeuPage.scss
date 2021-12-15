@@ -119,24 +119,28 @@
   padding-top: 5px;
 }
 
-#pointsVie{
+#pointsVie {
   height: 50px;
   width: 200px;
   position: absolute;
-  top:15px;
+  top: 15px;
   left: 15px;
   font-family: $policeStarJedi;
-  color:$jauneStarWars;
+  color: $jauneStarWars;
 }
 
-#retry{
+#retry {
   height: 70px;
   width: 300px;
-  position:absolute;
-  top:40%;
+  position: absolute;
+  top: 40%;
   left: 40%;
   font-family: $policeStarJedi;
   font-size: 1.5em;
-  color:$bleuStarWars;
+  color: $bleuStarWars;
   visibility: hidden;
+}
+
+#retry:hover {
+  cursor: pointer;
 }
